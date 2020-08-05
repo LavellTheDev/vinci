@@ -1,0 +1,15 @@
+{
+  "name": "vinci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "npx tailwindcss build src/styles.css -o public/output-styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.6.2"
+  }
+}
