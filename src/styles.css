@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.card{
+  @apply bg-white rounded overflow-hidden shadow-md relative
+}
+
 @font-face {
   font-family: 'Montserrat';
   font-weight: 400;
