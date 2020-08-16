@@ -1,0 +1,38 @@
+.contents {
+  width: 100%;
+  height: 100vh;
+}
+
+.panel {
+  background-color: #191919;
+}
+
+.hero-img {
+  background-image: url("../assets/figma-imgs/careers-hero-img.png");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+p {
+  padding: 2rem;
+}
+
+.resp {
+  padding: 2rem;
+}
+
+details:nth-child(2n+1) {
+  background-color: #822;
+}
+
+details:nth-child(2n+2) {
+  background-color: #191919;
+}
+
+/* .contact a { */
+  /* margin-top: 4rem; */
+  /* padding: 2rem; */
+  /* background-color: #FFFFFF;
+  color: #191919; */
+/* } */

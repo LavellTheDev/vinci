@@ -1,0 +1,6 @@
+.hero-section {
+  background-image: url("../assets/figma-imgs/solutions-hero-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

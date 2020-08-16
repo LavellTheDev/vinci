@@ -148,7 +148,6 @@ module.exports = {
       '40': '10rem',
       '48': '12rem',
       '56': '14rem',
-      '64': '16rem',
     },
     backgroundColor: theme => theme('colors'),
     backgroundOpacity: theme => theme('opacity'),
@@ -436,6 +435,7 @@ module.exports = {
       '30': '30',
       '40': '40',
       '50': '50',
+      '100': '100',
     },
     gap: theme => theme('spacing'),
     gridTemplateColumns: {
