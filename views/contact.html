@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../public/css/contact.css">
+    <link rel="stylesheet" href="../public/css/output-styles.css">
+    <title>CONTACT</title>
+  </head>
+  <body>
+    <section id = "container">
+        <section id="cover" class="text-primary panel background cover overflow-hidden">
+         <nav class="w-screen flex justify-between relative z-10 sm:p-4 lg:p-4">
+        <a href="#">
+          <img class="max-w-xs h-16 sm:w-40 sm:h-auto sm:my-3" src="../public/assets/figma-imgs/vinci-logo.png" alt="vinci logo">
+        </a>
+        <div class="px-4 cursor-pointer mx-5 my-3 md:hidden">
+          <svg class="w-12" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </div>
+        <ul class="flex justify-between sm:hidden md:flex md:text-sm lg:text-l lg:mx-20">
+          <a href="/about">
+            <li class="uppercase hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">About</li>
+          </a>
+          <a href="/products">
+            <li class="uppercase mx-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Products</li>
+          </a>
+          <a href="partners">
+            <li class="uppercase mx-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Partners</li>
+          </a>
+          <a href="/blog">
+            <li class="uppercase mx-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Blog</li>
+          </a>
+          <a href="/careers">
+            <li class="uppercase mx-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Careers</li>
+          </a>
+          <a href="/contact">
+            <li class="uppercase mx-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Contact</li>
+          </a>
+        </ul>
+        </nav>
+          <hr class="-mt-8">
+          <h1 class="text-4xl text-left tracking-wider p-4 mt-40 ml-48">CONTACT</h1>
+          <div class="tracking-widest text-left p-4 ml-48">
+            <p>Have any questions?</p>
+            <p>Drop us a message.</p>
+            <p>Book a demo.</p>
+          </div>
+       </section>
+       <section class="flex mb-4 panel background first">
+          <div class="ml-12 mt-6 p-6 pt-20 w-1/2">
+              <h2 class ="text-primary font-semibold text-3xl text-left tracking-wider">
+                  Contact VINCI
+              </h2>
+              <hr class="mt-4">
+              <section class="text-gray-700 body-font relative">
+                <div class="container px-5 mx-auto">
+                  <div class="flex flex-col text-center w-full mb-12">
+                </div>
+              <div class="lg:w-full md:w-1/2 mx-auto">
+                <div class="flex flex-wrap -m-2">
+                  <div class="p-2 w-1/2 ">
+                    <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Name" type="text">
+                  </div>
+                  <div class="p-2 w-1/2">
+                    <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Email" type="email">
+                  </div>
+                  <div class="p-2 w-full">
+                    <textarea class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block" placeholder="Message"></textarea>
+                  </div>
+                  <div class="p-2 w-full">
+                    <button class="flex mx-left text-white border-solid border-2 border-white-100 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </section>
+          </div>
+      </section>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
+    <script src ="../src/js/contact.js"></script>
+  </body>
+</html>

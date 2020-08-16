@@ -8,7 +8,7 @@
   </head>
   <body>
     <section id = "container">
-       <section id="cover" class="panel background cover overflow-hidden">
+        <section id="cover" class="text-primary panel background cover overflow-hidden">
          <nav class="w-screen flex justify-between relative z-10 sm:p-4 lg:p-4">
         <a href="#">
           <img class="max-w-xs h-16 sm:w-40 sm:h-auto sm:my-3" src="../public/assets/figma-imgs/vinci-logo.png" alt="vinci logo">
@@ -36,8 +36,13 @@
             <li class="uppercase mx-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Contact</li>
           </a>
         </ul>
-      </nav>
-      <hr class="-mt-8">
+        </nav>
+          <hr class="-mt-8">
+          <h1 class="text-4xl text-left tracking-wider p-4 mt-40 ml-48">ABOUT</h1>
+          <div class="tracking-widest text-left p-4 ml-48">
+            <p>Learn more about VINCI's</p>
+            <p>mission, origin and teams</p>
+          </div>
        </section>
        <section class="flex mb-4 panel background first">
           <div class="ml-12 mt-6 p-6 pt-20 w-1/2">
@@ -61,7 +66,7 @@
           </div>
       </section>
 
-    <section class="flex pb-6 mb-4 text-primary panel background second">
+      <section class="flex pb-6 mb-4 text-primary panel background second">
         <div class="w-3/5 ml-12 mt-6 p-6 pt-14">
           <h2 class="text-left font-semibold text-3xl"> Origins </h2>
           <hr class="mt-4">
@@ -77,43 +82,69 @@
         <div class="w-2/3 pt-12 ml-32 mt-16">
           <img class="" src="../public/img/LEO.jpg" alt="picture of davinci">
         </div>
+      </section>
+
+      <section class=" mb-4 text-primary panel background third">
+          <div class = "ml-12 mt-6 p-6 pt-14">
+          <h2 class="text-left font-semibold text-3xl tracking-wider">Team</h2>
+          <hr class="w-1/2">
+
+          <div class="p-4 mb-6">
+            <div class="flex mx-24">
+              <div class="w-1/3 px-4">
+                <div class="bg-gray-400 w-40 h-40">
+                    <img id="employeeImg" class="object-cover h-full w-full" src="../public/img/eagle.jpg" alt="">
+                    <div id="myModal" class="modal">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" id="img01">
+                      <div id="caption">
+                      </div>
+                    </div>
+                </div>
+                <span class="flex ml-10 p-1 font-semibold">Eagle Wu</span>
+                <hr class="ml-2 w-1/2">
+                <span class="flex ml-8 p-1">Business Dev</span>
+              </div>
+              <div class="w-1/3 px-4">
+                <div class="bg-gray-500 w-40 h-40"></div>
+                <span class="flex ml-10 p-1 font-semibold">Tim Clancy</span>
+                <hr class="w-1/2 ml-2">
+                <span class="flex ml-12 p-1 ">Engineer</span>
+              </div>
+              <div class="w-1/3 px-4 mr-4">
+                <div class="bg-gray-400 w-40 h-40"></div>
+                <span class=" flex ml-10 p-1 font-semibold">blank</span>
+                <hr class="w-1/2 ml-2">
+                <span class="flex ml-10 p-1">Business Dev</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4">
+            <div class="flex mx-24">
+              <div class="w-1/3 px-4 -mt-4">
+                <div class="bg-gray-400 w-40 h-40"></div>
+                <span class="flex ml-10 p-1 font-semibold">blank</span>
+                <hr class="w-1/2 ml-2">
+                <span class="flex ml-10 p-1">Business Dev</span>
+              </div>
+              <div class="w-1/3 px-4 -mt-4">
+                <div class="bg-gray-500 w-40 h-40"></div>
+                <span class="flex ml-10 p-1 font-semibold">blank</span>
+                <hr class="w-1/2 ml-2">
+                <span class="flex ml-10 p-1">Business Dev</span>
+              </div>
+              <div class="w-1/3 px-4 mr-4 -mt-4">
+                <div class="bg-gray-400 w-40 h-40"></div>
+                <span class="flex ml-10 p-1 font-semibold">blank</span>
+                <hr class="w-1/2 ml-2">
+                <span class="flex ml-10 p-1">Business Dev</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
-
-    <section class=" mb-4 text-primary panel background third">
-      <div class = "ml-12 mt-6 p-6 pt-14">
-      <h2 class="text-left font-semibold text-3xl tracking-wider">Team</h2>
-      <hr class="w-1/2">
-
-      <div class="p-4">
-        <div class="flex -mx-4">
-          <div class="w-1/3 px-4">
-            <div class="bg-gray-400 w-40 h-40"></div>
-          </div>
-          <div class="w-1/3 px-4">
-            <div class="bg-gray-500 w-40 h-40"></div>
-          </div>
-          <div class="w-1/3 px-4 mr-4">
-            <div class="bg-gray-400 w-40 h-40"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-4">
-        <div class="flex -mx-4">
-          <div class="w-1/3 px-4">
-            <div class="bg-gray-400 w-40 h-40"></div>
-          </div>
-          <div class="w-1/3 px-4">
-            <div class="bg-gray-500 w-40 h-40"></div>
-          </div>
-          <div class="w-1/3 px-4 mr-4">
-            <div class="bg-gray-400 w-40 h-40"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-   </section>
- </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
     <script src ="../src/js/about.js"></script>
