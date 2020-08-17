@@ -19,7 +19,6 @@ body{
   width: 100%;
   will-change: transform;
 }
-
-#cover{
-
+.background{
+background-color: #191919;
 }
