@@ -4,3 +4,13 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+
+li {
+  list-style: initial;
+  padding-bottom: 2rem;
+}
+
+nav li {
+  list-style: none;
+}

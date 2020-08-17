@@ -18,15 +18,15 @@
            NAV SECTION
           ==================-->
 
-          <nav class="w-screen flex justify-between relative z-10 border-b sm:p-4 md:p-4 lg:p-2">
+          <nav class="w-screen flex justify-between relative z-10 border-b sm:p-4 md:p-4 xlg:text-2xl">
             <a href="./index.html">
               <img class="max-w-xs h-16 sm:w-40 sm:h-auto sm:my-3" src="../public/assets/figma-imgs/vinci-logo.png" alt="vinci logo">
             </a>
             <section class="hamburger-block">
-              <div class="hamburger-menu px-4 cursor-pointer mx-5 my-3 md:hidden">
+              <div class="hamburger-menu px-4 cursor-pointer mx-5 my-3 lg:hidden">
                 <svg class="w-12" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
               </div>
-              <ul class="hidden">
+              <!-- <ul class="hidden">
                 <a href="./about.html">
                   <li class="uppercase m-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">About</li>
                 </a>
@@ -45,10 +45,10 @@
                 <a href="./contact.html">
                   <li class="uppercase m-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Contact</li>
                 </a>
-              </ul>
+              </ul> -->
             </section>
 
-            <ul class="flex justify-between sm:hidden md:flex md:text-sm lg:text-xl lg:mx-32">
+            <ul class="flex justify-between sm:hidden lg:flex md:text-sm lg:text-xl lg:mx-18">
               <a href="./about.html">
                 <li class="uppercase m-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">About</li>
               </a>
@@ -70,34 +70,36 @@
             </ul>
           </nav>
 
-          <h1 class="text-5xl font-sans font-black uppercase" style="z-index:100;">Codex</h1>
-          <p class="text-lg font-bold" style="z-index:100;">Access the entire codex suite or pick and choose which toolkits to use</p>
+          <h1 class="text-5xl font-sans font-black uppercase sm:mx-20 sm:my-20" style="z-index:100;">Codex</h1>
+          <p class="text-lg font-bold sm:mx-12 sm:my-32" style="z-index:100;">Access the entire codex suite or pick and choose which toolkits to use</p>
 
           <!-- <div class="overlay w-full h-screen" style="position:absolute; top:0; left:0;  min-width:100%; min-height:100vh; background-color:rgba(0,0,0,0.3); z-index:0;"></div> -->
         </section>
       </section>
       <section class="panel bg-secondary">
-        <section class="contents text-lg md:ml-20 p-12 md:my-32 bg-secondary">
+        <section class="contents text-lg p-12 bg-secondary lg:py-40">
           <h1 class="text-4xl text-center py-4">Educate Your Workforce Like Never Before</h1>
           <hr class="m-auto w-3/4 py-4 font-thin">
-          <p>
-            Instructors face limited time, high costs, and potential hazards during high consequence training. These limitations create a gap between the amount of time/repetitions needed for effective knowledge retention and the available opportunities to train.
-          </p>
-          <br>
-          <p>
-            Codex not only brings powerful VR technologies to training, but the full suite of tools brings VR training to a whole new level. Create, train, and analyze simulations on next-gen VR platforms.
-          </p>
-          <br>
-          <p>
-            Codex is modular: pick and choose different tools or integrate the entire suite of tools.
-          </p>
+          <section class="md:ml-12">
+            <p>
+              Instructors face limited time, high costs, and potential hazards during high consequence training. These limitations create a gap between the amount of time/repetitions needed for effective knowledge retention and the available opportunities to train.
+            </p>
+            <br>
+            <p>
+              Codex not only brings powerful VR technologies to training, but the full suite of tools brings VR training to a whole new level. Create, train, and analyze simulations on next-gen VR platforms.
+            </p>
+            <br>
+            <p>
+              Codex is modular: pick and choose different tools or integrate the entire suite of tools.
+            </p>
+          </section>
         </section>
       </section>
       <section class="panel bg-secondary">
-        <section class="authoring md:flex m-auto p-8">
+        <section class="authoring lg:flex m-auto p-12 lg:py-40">
           <section class="contents">
             <h1 class="text-3xl font-black uppercase">Codex Authoring</h1>
-            <h4 class="text-xl font-bold">Fully Customize Your Simulations</h4>
+            <h4 class="text-xl font-bold sm:my-12">Fully Customize Your Simulations</h4>
             <ul>
               <li>
                 Fully customize simulations, such as interactions, instructional content, and training manuals as easily as Powerpoint.
@@ -114,10 +116,10 @@
         </section>
       </section>
       <section class="panel bg-secondary">
-        <section class="simulator md:flex m-auto p-8">
+        <section class="simulator lg:flex m-auto p-12 lg:py-40">
           <section class="contents">
             <h1 class="text-3xl font-black uppercase">Codex Simulator</h1>
-            <h4 class="text-xl font-bold">Highly Realistic, Interactive VR</h4>
+            <h4 class="text-xl font-bold sm:my-12">Highly Realistic, Interactive VR</h4>
             <ul>
               <li>
                 Train in highly Realistic 3D environments of simulations created in Codex Authoring
@@ -134,10 +136,10 @@
         </section>
       </section>
       <section class="panel bg-secondary">
-        <section class="analytics md:flex m-auto p-8">
+        <section class="analytics lg:flex m-auto p-12 lg:py-40">
           <section class="contents">
             <h1 class="text-3xl font-black uppercase">Codex Analytics</h1>
-            <h4 class="text-xl font-bold">Robust Data Analytics</h4>
+            <h4 class="text-xl font-bold sm:my-12">Robust Data Analytics</h4>
             <ul>
               <li>
                 Live stream multiple student views as they train in VR
@@ -154,11 +156,12 @@
         </section>
       </section>
       <section class="panel bg-secondary">
-        <section class="leverage m-auto p-8">
+        <section class="leverage m-auto p-12 lg:px-12 lg:flex lg:py-48">
           <section class="contents">
             <h1 class="text-3xl font-black uppercase text-center">Why Codex</h1>
-            <h2 class="text-2xl font-bold">Leverage low-cost VR</h2>
-            <hr class="w-3/4 py-4 font-thin">
+            <h2 class="text-2xl font-bold sm:my-8">Leverage low-cost VR
+              <hr class="w-3/4 py-4 font-thin">
+            </h2>
             <ul>
               <li>
                 Realistic training at 10% of the cost physical simulators and enable more than 10X the number of repetitions.
@@ -171,14 +174,16 @@
               </li>
             </ul>
           </section>
+          <img class="lg:w-1/2 pl-4" src="https://images.unsplash.com/photo-1552871847-d81af14f486d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80" alt="VR Simulation">
         </section>
       </section>
       <section class="panel bg-secondary">
-        <section class="leverage m-auto p-8">
+        <section class="leverage m-auto p-12 lg:flex lg:py-48">
           <section class="contents">
             <h1 class="text-3xl font-black uppercase text-center">Why Codex</h1>
-            <h2 class="text-2xl font-bold">Personalized and Relevant Content</h2>
-            <hr class="w-3/4 py-4 font-thin">
+            <h2 class="text-2xl font-bold sm:my-8">Personalized and Relevant Content
+              <hr class="w-3/4 py-4 font-thin">
+            </h2>
             <ul>
               <li>
                 Utilize smart insights from codex analytics to tailor training content to individual students.
@@ -188,14 +193,16 @@
               </li>
             </ul>
           </section>
+          <img class="lg:w-1/2 pl-4" src="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="VR simulation">
         </section>
       </section>
       <section class="panel bg-secondary">
-        <section class="leverage m-auto p-8">
+        <section class="leverage m-auto p-12 lg:flex lg:py-48">
           <section class="contents">
             <h1 class="text-3xl font-black uppercase text-center">Why Codex</h1>
-            <h2 class="text-2xl font-bold">Scalable Collaboration</h2>
-            <hr class="w-3/4 py-4 font-thin">
+            <h2 class="text-2xl font-bold sm:my-8">Scalable Collaboration
+              <hr class="w-3/4 py-4 font-thin">
+            </h2>
             <ul>
               <li>
                 Enable an ecosystem of content by empowering your team to innovate and create.
@@ -205,11 +212,12 @@
               </li>
             </ul>
           </section>
+          <img class="lg:w-1/2 pl-4" src="https://images.unsplash.com/photo-1538388149542-5e24932d11a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" alt="Group of people using VR sets at same time">
         </section>
       </section>
       <section class="panel bg-secondary">
         <section class="contact">
-          
+          <h1>CONTACT PLACEHOLDER</h1>
         </section>
       </section>
 
