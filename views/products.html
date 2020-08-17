@@ -18,7 +18,40 @@
            NAV SECTION
           ==================-->
 
-          <nav class="w-screen flex justify-between relative z-10 border-b sm:p-4 md:p-4 xlg:text-2xl">
+          <!--==================
+           NAV SECTION
+          ==================-->
+
+          <nav class="w-screen flex justify-between relative z-10 border-b sm:p-4 lg:p-6">
+            <a href="./index.html">
+              <img class="max-w-xs h-16 sm:w-40 sm:h-auto sm:my-3" src="../public/assets/figma-imgs/vinci-logo.png" alt="vinci logo">
+            </a>
+            <div class="px-4 cursor-pointer mx-5 my-3 md:hidden">
+              <svg class="w-12" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </div>
+            <ul class="flex justify-between sm:hidden md:flex md:text-sm lg:text-xl lg:mx-32">
+              <a href="./about.html">
+                <li class="uppercase m-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">About</li>
+              </a>
+              <a href="./products.html">
+                <li class="uppercase m-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Solutions</li>
+              </a>
+              <a href="./partners.html">
+                <li class="uppercase m-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Partners</li>
+              </a>
+              <a href="./blog.html">
+                <li class="uppercase m-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Blog</li>
+              </a>
+              <a href="./careers.html">
+                <li class="uppercase m-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Careers</li>
+              </a>
+              <a href="./contact.html">
+                <li class="uppercase m-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Contact</li>
+              </a>
+            </ul>
+          </nav>
+
+          <!-- <nav class="w-screen flex justify-between relative z-10 border-b sm:p-4 md:p-4 xlg:text-2xl">
             <a href="./index.html">
               <img class="max-w-xs h-16 sm:w-40 sm:h-auto sm:my-3" src="../public/assets/figma-imgs/vinci-logo.png" alt="vinci logo">
             </a>
@@ -26,26 +59,6 @@
               <div class="hamburger-menu px-4 cursor-pointer mx-5 my-3 lg:hidden">
                 <svg class="w-12" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
               </div>
-              <!-- <ul class="hidden">
-                <a href="./about.html">
-                  <li class="uppercase m-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">About</li>
-                </a>
-                <a href="./products.html">
-                  <li class="uppercase m-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Products</li>
-                </a>
-                <a href="./partners.html">
-                  <li class="uppercase m-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Partners</li>
-                </a>
-                <a href="./blog.html">
-                  <li class="uppercase m-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Blog</li>
-                </a>
-                <a href="./careers.html">
-                  <li class="uppercase m-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Careers</li>
-                </a>
-                <a href="./contact.html">
-                  <li class="uppercase m-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Contact</li>
-                </a>
-              </ul> -->
             </section>
 
             <ul class="flex justify-between sm:hidden lg:flex md:text-sm lg:text-xl lg:mx-18">
@@ -68,7 +81,7 @@
                 <li class="uppercase m-5 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Contact</li>
               </a>
             </ul>
-          </nav>
+          </nav> -->
 
           <section class="w-full p-4 absolute z-1 sm:mt-32 md:-my-84">
             <h1 class="text-center uppercase font-sans font-black -mb-20 -mt-6 p-4 sm:text-4xl md:text-6xl" style="z-index:100;">
@@ -76,7 +89,7 @@
               Codex
               <hr class="mt-4">
             </h1>
-            <p class="text-lg font-bold sm:mx-12 sm:my-32" style="z-index:100;">Access the entire codex suite or pick and choose which toolkits to use</p>
+            <p class="text-center text-lg font-bold sm:mx-12 sm:my-32" style="z-index:100;">Access the entire codex suite or pick and choose which toolkits to use</p>
 
             <p class="down-arrow sm:text-6xl my-32 text-center">⌄</p>
           </section>
@@ -225,7 +238,28 @@
       </section>
       <section class="panel bg-secondary">
         <section class="contact">
-          <h1>CONTACT PLACEHOLDER</h1>
+          <section class=" bg-center bg-covermb-4 panel background first" style="background-image: url('../public/img/contactbckgrnd.png'">
+         <section class="text-gray-700 body-font relative">
+           <div class="container px-5 py-24 mx-auto flex sm:flex-no-wrap flex-wrap">
+               <div class="bg-opacity-75 lg:w-2/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                 <h2 class="text-primary text-3xl mb-1 font-medium title-font text-left">Contact VINCI</h2>
+                 <hr class="mb-8">
+                 <input class="bg-white border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="Name" type="text">
+                 <input class="bg-white border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4 mt-2" placeholder="Email" type="email">
+  ​
+                 <textarea class="border focus:outline-none h-32 focus:border-indigo-500 text-base px-8 py-2 mb-4 mt-2 resize-none" placeholder="Message"></textarea>
+                 <button class=" mt-2 w-1/3 text-white border-solid border-2 py-2 px-6 focus:outline-none hover:bg-red-600 text-lg">send</button>
+                 <p class="text-xs text-gray-500 mt-3">////////////////////////////////////////////////////////////////////</p>
+               </div>
+  ​
+               <div class="lg:w-1/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-end ml-10 relative bg-content h-56 mt-32 object-cover"
+                 <h2></h2>
+                 <img  class="" src="../public/img/placeholder.png" alt="">
+                 <img  class="mt-20" src="../public/img/placeholder.png" alt="">
+               </div>
+             </div>
+           </section>
+         </section>
         </section>
       </section>
 

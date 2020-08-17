@@ -13,4 +13,5 @@ li {
 
 nav li {
   list-style: none;
+  padding-bottom: 0;
 }
