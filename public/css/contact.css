@@ -1,0 +1,39 @@
+body{
+
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.panel{
+  border: 1px solid #191919;
+  text-align: center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  will-change: transform;
+}
+
+/* Eventually give all the same class */
+
+.background{
+  background: #191919;
+}
+
+#cover{
+background-image: url("../img/contactstock.png");
+background-size: cover;
+box-shadow:inset 0 0 0 2000px rgba(25, 25, 25, 0.4);
+}
+
+.first{
+background-image: url("../img/contactbckgrnd.png");
+background-size: cover;
+object-fit: cover;
+}

@@ -4,9 +4,9 @@ module.exports = {
     extend: {
       colors: {
         primary:  '#FFFFFF',
-        secondary: '#191919',
-        neutral: '#6C6C6C',
-        third: '#7C7C7C',
+        secondary: '#191919';
+        third: '#c4c4c4';
+
       },
       fontFamily: {
         'sans': ['Montserrat'],
