@@ -596,7 +596,7 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 320px) {
   .container {
     max-width: 640px;
   }
@@ -18275,12 +18275,12 @@ video {
   src: url('../fonts/Spectral/Spectral-Regular.ttf') format('truetype');
 }
 
-@media (min-width: 640px) {
+@media (min-width: 320px) {
   .sm\:container {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 320px) {
     .sm\:container {
       max-width: 640px;
     }
@@ -25347,7 +25347,7 @@ video {
   }
 
   .sm\:max-w-screen-sm {
-    max-width: 640px;
+    max-width: 320px;
   }
 
   .sm\:max-w-screen-md {
@@ -35857,7 +35857,7 @@ video {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 320px) {
     .md\:container {
       max-width: 640px;
     }
@@ -53434,7 +53434,7 @@ video {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 320px) {
     .lg\:container {
       max-width: 640px;
     }
@@ -71011,7 +71011,7 @@ video {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 320px) {
     .xl\:container {
       max-width: 640px;
     }

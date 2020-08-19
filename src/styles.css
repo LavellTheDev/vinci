@@ -1,21 +1,16 @@
-/* TAILWIND DEFAULTS */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.card{
-  @apply bg-white rounded overflow-hidden shadow-md relative
-}
 
 @font-face {
   font-family: 'Montserrat';
   font-weight: 400;
-  src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  src: url('../public/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Spectral';
   font-weight: 400;
-  src: url('../fonts/Spectral/Spectral-Regular.ttf') format('truetype');
+  src: url('../public/fonts/Spectral/Spectral-Regular.ttf') format('truetype');
 }
