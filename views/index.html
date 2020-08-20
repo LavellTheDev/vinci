@@ -6,7 +6,7 @@
     <!-- css link -->
     <link rel="stylesheet" href="../public/css/output-styles.css">
     <link rel="stylesheet" href="../public/css/panels.css">
-    <link rel="stylesheet" href="../public/css/index.css">
+    <!-- <link rel="stylesheet" href="../public/css/index.css"> -->
     <title>Vinci VR</title>
   </head>
   <body class="text-primary bg-secondary font-serif">
@@ -18,7 +18,25 @@
            NAV SECTION
           ==================-->
 
-          <nav class="w-screen flex justify-between relative z-10 border-b sm:p-4 lg:p-6">
+          <header class="text-gray-700 body-font">
+              <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
+                <a href="./index.html" class="flex items-center mb-4 md:mb-0  z-10">
+                  <img class="w-1/6 -mt-2" src="../public/assets/figma-imgs/vinci-logo.png" alt="">
+                </a>
+                <nav class="md:ml-auto flex flex-wrap items-center z-10 text-base justify-center text-primary text-lg font-semibold">
+                  <a href="./about.html" class="mr-5 hover:text-gray-900">About</a>
+                  <a href="./products.html" class="mr-5 hover:text-gray-900">Solutions</a>
+                  <a href="./partners.html" class="mr-5 hover:text-gray-900">Partners</a>
+                  <a href="./careers.html" class="mr-5 hover:text-gray-900">Careers</a>
+                  <a href="./blog.html" class="mr-5 hover:text-gray-900">Blogs</a>
+                  <a href="./contact.html" class="mr-5 hover:text-gray-900">Contact</a>
+                </nav>
+              </div>
+          </header>
+          <hr class="-mt-4">
+
+
+          <!-- <nav class="w-screen flex justify-between relative z-10 border-b sm:p-4 lg:p-6">
             <a href="./index.html">
               <img class="max-w-xs h-16 sm:w-40 sm:h-auto sm:my-3" src="../public/assets/figma-imgs/vinci-logo.png" alt="vinci logo">
             </a>
@@ -383,6 +401,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
-    <script type="text/javascript" src="../src/panels.js"></script>
+    <script src ="../src/js/about.js"></script>
   </body>
 </html>
