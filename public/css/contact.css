@@ -1,0 +1,39 @@
+body{
+
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.panel{
+  border: 1px solid #191919;
+  text-align: center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  will-change: transform;
+}
+
+
+/* Eventually give all the same class */
+
+.background{
+  background: #191919;
+}
+
+
+.second{
+  border: 1px solid transparent;
+  background-image: url("../img/gradient.png");
+  background-size: cover;
+}
+
+.third{
+  background: rgba(37, 37, 37, 0.95);
+}
