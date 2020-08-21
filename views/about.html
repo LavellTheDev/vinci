@@ -8,13 +8,13 @@
   </head>
   <body class="font-serif">
     <section id = "container" class="main-wrapper overflow-x-hidden">
-        <section id="cover" class="bg-no-repeat bg-center bg-cover text-primary panel background cover overflow-hidden w-full h-screen hero-section" style="background-image: url('../public/assets/figma-imgs/about-cover.png')">
+     <section id="cover" class="bg-no-repeat bg-center bg-cover text-primary panel background cover overflow-hidden w-full h-screen hero-section" style="background-image: url('../public/assets/figma-imgs/about-cover.png')">
           <header class="text-gray-700 body-font ">
               <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <a href="./index.html" class="flex items-center mb-4 md:mb-0">
                   <img class="w-1/6 -mt-2" src="../public/assets/figma-imgs/vinci-logo.png" alt="">
                 </a>
-                <nav class="md:ml-auto flex flex-wrap items-center z-10 text-base justify-center text-primary text-lg font-semibold">
+                <nav class="md:ml-auto lg:ml-auto flex flex-wrap items-center z-10 text-base justify-center text-primary text-lg font-semibold">
                   <a href="./about.html" class="mr-5 hover:text-gray-900">About</a>
                   <a href="./products.html" class="mr-5 hover:text-gray-900">Solutions</a>
                   <a href="./partners.html" class="mr-5 hover:text-gray-900">Partners</a>
@@ -32,29 +32,31 @@
             <p>mission, origin and teams</p>
           </div>
        </section>
-       <section class="flex mb-4 panel background first">
-          <div class="ml-12 mt-6 p-6 pt-20 w-1/2">
-              <h2 class ="text-primary font-semibold text-3xl text-left tracking-wider font-sans">
-                  A Note From VINCI
-              </h2>
-              <hr class="mt-4">
-              <p class="text-primary text-left mt-6 tracking-widest leading-8">
-                Virtual Reality is one of the greatest communication and knowledge transfer
-                tools ever invented. But before its benefits can be fully realized,
-                the barrier to create simulations must be overcome.
-                <br> <br>
-                VINCI creates tools to lower the complexity, knowledge, and cost needed
-                to create and manage Virtual Reality simulations. Through our innovations,
-                we will enable a new generation of thinkers, creators, and instructors
-                to create their own.
-               </p>
-          </div>
-          <div class="w-1/2 pt-12 ml-10 mt-16">
-              <img src="../public/img/backshadow.png" alt="">
-          </div>
+       <section class="panel bg-secondary">
+           <section class="lg:flex mb-4 ">
+              <div class="w-3/5 ml-20 m-2 mt-6 p-6 pt-14">
+                  <h2 class ="text-primary font-semibold text-3xl text-left tracking-wider font-sans">
+                      A Note From VINCI
+                  </h2>
+                  <hr class="mt-4">
+                  <p class="text-primary text-left mt-6 tracking-widest leading-8">
+                    Virtual Reality is one of the greatest communication and knowledge transfer
+                    tools ever invented. But before its benefits can be fully realized,
+                    the barrier to create simulations must be overcome.
+                    <br> <br>
+                    VINCI creates tools to lower the complexity, knowledge, and cost needed
+                    to create and manage Virtual Reality simulations. Through our innovations,
+                    we will enable a new generation of thinkers, creators, and instructors
+                    to create their own.
+                   </p>
+              </div>
+              <div class="w-2/5 p-12">
+                  <img class="object-cover h-full" src="../public/assets/figma-imgs/vitruve.jpg" alt="">
+              </div>
+            </section>
       </section>
 
-      <section class="flex pb-6 mb-4 text-primary panel background second">
+      <section class="lg:flex pb-6 mb-4 text-primary panel bg-secondary">
         <div class="w-3/5 ml-20 m-2 mt-6 p-6 pt-14">
           <h2 class="text-primary font-semibold text-3xl text-left tracking-wider font-sans"> Origins </h2>
           <hr class="mt-4">
@@ -68,21 +70,27 @@
           </p>
         </div>
         <div class="w-2/5 p-12 ">
-          <img class="h-full" src="../public/assets/figma-imgs/leo.png" alt="picture of davinci">
+          <img class="object-cover lg:h-full" src="../public/assets/figma-imgs/leo.png" alt="picture of davinci">
         </div>
       </section>
 
-      <section class=" mb-4 text-primary panel background">
+      <section class=" mb-4 text-primary panel bg-secondary">
         <section class="text-gray-700 body-font">
               <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-col text-center w-full mb-20">
-                  <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-primary">Our Team</h1>
-                  <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+                <!--Come back here later to practice responsive-->
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-primary font-sans">Our Team</h1>
+                  <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-primary">Click an image to learn more about our team members.</p>
                 </div>
                 <div class="flex flex-wrap -m-2">
                   <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
                     <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                      <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/assets/figma-imgs/eagle.jpg">
+                      <img id="myImg" alt="team" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/assets/figma-imgs/eagle.jpg">
+                      <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                      </div>
                       <div class="flex-grow">
                         <h2 class="text-primary title-font font-medium">Eagle Wu</h2>
                         <p class="text-third">Business Dev</p>
@@ -91,7 +99,12 @@
                   </div>
                   <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
                     <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                      <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/assets/figma-imgs/clancy.png">
+                      <img id="myImg" alt="team" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/assets/figma-imgs/clancy.png">
+                      <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                      </div>
                       <div class="flex-grow">
                         <h2 class="text-primary title-font font-medium">Tim Clancy</h2>
                         <p class="text-third">Engineer</p>
@@ -100,7 +113,7 @@
                   </div>
                   <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
                     <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                      <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/liam.jpg">
+                      <img id="myImg" alt="team" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/assets/figma-imgs/liam.jpg">
                       <div class="flex-grow">
                         <h2 class="text-primary title-font font-medium">john doe</h2>
                         <p class="text-third">blank</p>
@@ -109,7 +122,7 @@
                   </div>
                   <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
                     <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                      <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/matt.jpg">
+                      <img id="myImg" alt="team" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/assets/figma-imgs/matt.jpg">
                       <div class="flex-grow">
                         <h2 class="text-primary title-font font-medium">John Doe</h2>
                         <p class="text-third">blank</p>
@@ -118,7 +131,7 @@
                   </div>
                   <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
                     <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                      <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/assests/figma-imgs/img1.jpg">
+                      <img id="myImg" alt="team" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/assets/figma-imgs/img1.jpg">
                       <div class="flex-grow">
                         <h2 class="text-primary title-font font-medium">john doe</h2>
                         <p class="text-third">blank</p>
@@ -127,7 +140,7 @@
                   </div>
                   <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
                     <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                      <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/tim.jpeg">
+                      <img id="myImg" alt="team" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/assets/figma-imgs/tim.jpeg">
                       <div class="flex-grow">
                         <h2 class="text-primary title-font font-medium">john doe</h2>
                         <p class="text-third">blank</p>
@@ -138,6 +151,73 @@
               </div>
             </section>
         </section>
+
+        <section class="bg-secondary panel">
+           <footer class="bg-secondary bg-bottom bg-cover text-primary body-font mt-24 p-4" style="background-image: url('../public/img/contactbckgrnd.png')">
+             <h1 class ="text-primary text-center sm:text-4xl text-3xl">Want to Learn More About VR Training?</h1>
+             <div class="flex flex-col justify-center mt-24">
+             <button class="w-1/5 mx-auto text-white border-sloid border-2 py-2 px-6 focus:outline-none hover:bg-red-600 text-lg">Check Out Our Blogs</button>
+             <p class="mx-auto text-Center text-2xl text-primary text-semibold">-or-</p>
+             <button class=" w-1/5 mx-auto text-white border-sloid border-2 py-2 px-6 focus:outline-none hover:bg-red-600 text-lg">Reach Out To Us</button>
+             </div>
+             <div class=" container px-5 py-32 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+               <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+                 <img class="-mt-2" src="../public/assets/figma-imgs/vinci-logo.png" alt="">
+               </div>
+               <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+                 <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                   <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"></h2>
+                   <nav class="list-none mb-10 -mt-24">
+                     <li>
+                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer">ABOUT</a>
+                     </li>
+                     <li>
+                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer">SOLUTIONS</a>
+                     </li>
+                     <li>
+                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer">PARTNERS</a>
+                     </li>
+                     <li>
+                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer">CAREERS</a>
+                     </li>
+                     <li>
+                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer">BLOGS</a>
+                     </li>
+                     <li>
+                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer">CONTACT</a>
+                     </li>
+                   </nav>
+                 </div>
+               </div>
+             </div>
+             <div class="bg-gray-200">
+               <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                 <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 VINCI-VR —
+                   <a href="" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@tresstudios</a>
+                 </p>
+                 <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                   <a class="text-gray-500">
+                     <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                       <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                     </svg>
+                   </a>
+                   <a class="ml-3 text-gray-500">
+                     <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                       <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                     </svg>
+                   </a>
+                   <a class="ml-3 text-gray-500">
+                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                       <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                       <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                     </svg>
+                   </a>
+                 </span>
+               </div>
+             </div>
+           </footer>
+        </section>
+
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
