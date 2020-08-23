@@ -1,0 +1,36 @@
+{{#if error}}
+    <div class="alert alert-danger" role="alert">
+        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+      {{error}}
+    </div>
+{{/if}}
+
+<head>
+	<link href="/css/store.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+
+<body id = "store">
+	<p class = '' id = 'title'>S T O R E</p>
+
+
+	<div class = 'col-md-12 asset short'>
+		<div class = 'imgcontainer mid' id="M4"></div>
+		<p class = 'title lefttext'>VR WEAPONS PACK</p>
+		<p class = 'description'>The VR weapons pack is a full collection of realisitc airsoft guns users can scan into VR environments, allowing for immersive yet safe simulations. The complete set features 2 hyper realistic M4s, 3 pistols, body armor and helmet, gun bags, and more. For the complete package, feel free to email ewu@vinci-vr.com.</p>
+		<p class = 'price'>PRICE: $3,602 (includes stripe/cc cost)</p>
+
+		<form method="POST">
+  	<script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_live_2JKjIfE7axMgMLOKEMBgRG5o"
+    data-amount="360200"
+    data-name="Vinci VR"
+    data-description="VR Weapons Pack"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto">
+  </script>
+</form>
+	</div>
+</body>

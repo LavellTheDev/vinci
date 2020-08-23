@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  src: url('../public/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spectral';
+  font-weight: 400;
+  src: url('../public/fonts/Spectral/Spectral-Regular.ttf') format('truetype');
+}

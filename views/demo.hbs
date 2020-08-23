@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  
+  
+<!-- This demo has no orbital controls for the camera, only zoom -->
+
+  <head>
+    <title>Vinci Gun Demo</title>
+    <meta name="Vinci Gun Demo" content="A WebVR demo for VINCI VR.">
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+
+    <!-- a-frame extras package https://www.npmjs.com/package/aframe-extras -->
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.3.4/dist/aframe-extras.min.js"></script>
+    <!-- mouse cursor click-->
+    <script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script> 
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+  </head>
+
+  <script>
+      var xpos = null;
+      var zpos = null;
+      AFRAME.registerComponent('cursor-listener', {
+        init: function () {
+        this.el.addEventListener('click', function (evt) {
+          console.log('I was clicked at: ', evt.detail.intersection.point);
+          console.log('the x position is :', evt.detail.intersection.point.x);
+          console.log('the z position is :', evt.detail.intersection.point.z);
+          xpos = evt.detail.intersection.point.x;
+          zpos = evt.detail.intersection.point.z;
+          document.querySelector("#cam").setAttribute('position', {x:xpos, y:-1, z:zpos});
+        });
+      }});
+  </script>
+  
+  
+  <body>
+
+
+    <p id = "logo"> V I N C I </p>
+    
+    <a-scene id="main" fog="type: exponential; color: #000000">
+
+    <!-- the cursor -->
+
+    <a-entity id = "cam" position = "0 -1 5">
+        <a-camera>
+          <a-entity cursor="fuse: false"
+              position="0 0 -1"
+              geometry="primitive: ring; radiusInner: 0.024; radiusOuter: 0.03"
+              material="color: white; opacity: 0.5; shader: flat">
+          </a-entity>
+        </a-camera>
+      </a-entity>
+
+ 
+
+      <a-assets timeout="60000">
+        <a-asset-item id="obj-1" src="https://s3.us-east-2.amazonaws.com/modeldemo.bucket/TheFactory.obj"></a-asset-item>
+        <a-asset-item id="mtl-1" src="https://s3.us-east-2.amazonaws.com/modeldemo.bucket/TheFactory.mtl"></a-asset-item>
+      </a-assets>
+      
+      <a-entity cursor-listener environment="preset: forest; numDressing: 400" ></a-entity>
+
+      <a-entity cursor-listener id="building" scale="1 1 1" position ="0 0 0" rotation = "0 0 0 ">           
+        <a-entity id="p1" obj-model="obj: #obj-1; mtl: #mtl-1"></a-entity>
+      </a-entity>  
+
+      <!--
+      <a-sky 
+             color="black">
+      </a-sky>-->
+      
+    </a-scene>
+      
+  </body>
+</html>

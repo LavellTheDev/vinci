@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <title>VINCI</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	    <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+	    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	    <link href="css/theme-navy.css" rel="stylesheet" type="text/css" media="all" />
+	    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+	    <link href="css/custom2.css" rel="stylesheet" type="text/css" media="all" />
+	    <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+
+	    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+	    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+	    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+	    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+	    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+	    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+	    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+	    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+	    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+	    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+	    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+	    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	    <link rel="manifest" href="/manifest.json">
+	    <meta name="msapplication-TileColor" content="#ffffff">
+	    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	    <meta name="theme-color" content="#ffffff">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	    <script src="/js/FileSaver.js"></script>
+	</head>
+  <body>
+
+  	<div class="nav-container nav-transparent" style="min-height: 0 !important;">
+        <nav id="barr" class="absolute transparent navbar-default" style="margin-bottom: 0; margin-top: -8px; ">
+         <div class="container-fluid" style="width: 100%; padding: 0px">
+    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="container" style="width: 100%; padding: 0px">
+			    <div class="col-md-12" style="border-bottom: solid 2px #FFF; height: 6em">
+				    <div class="navbar-header" style="padding-top: 3vh;">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				     
+				     
+				<!--       <a class="navbar-brand logoText" href="#" style="margin-top: 15px; margin-bottom: 2px; padding-left: 0px; font-size: 1.3em !important">V I N C I</a> -->
+
+					<!-- Just an image -->
+					<nav class="navbar nav-transparent" style="background: none">
+					  <a class="navbar-brand" href="/">
+					  	{{#if black}}
+					    <img src="img/VINCILogo.png" width="130" alt="">
+					    {{else}}
+					    <img src="img/newlogo.png" width="130" alt="">
+
+					    {{/if}}
+					  </a>
+					</nav>
+
+				    </div>
+
+				    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="margin-top: 15px; color: #FFF !important;">
+				    
+				      <ul class="nav navbar-nav navbar-right" style="color: #FFF !important; padding-right: 15px; margin-top: 25px; font-size: 1.1em;">
+				        <li><a href="/about" class="navLink" style="color: #FFF">ABOUT</a></li>
+				        <li><a href="/services" class="navLink" style="color: #FFF">SOLUTIONS</a></li>
+				        <li><a href="/partners" class="navLink" style="color: #FFF">PARTNERS</a></li>
+				        <li><a href="/careers" class="navLink" id = "myInnerLink" style="color: #FFF">CAREERS</a></li>
+				        <li><a href="/blogs" class="navLink" id = "" style="color: #FFF">BLOGS</a></li>
+				        <li><a href="/contact" class="navLink" id = "" style="color: #FFF">CONTACT</a></li>
+
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				</div>
+			</div>
+		</div>
+		</nav>
+	</div>
+    {{{body}}}
+
+       <section id="footer">
+        	<div class="col-md-6">
+	        	<div class="footer-listing">
+	        		<a href="/about"><span class="footer-link">ABOUT</span></a>
+	        		<br>
+		        	<a href="/services"><span class="footer-link">SOLUTIONS</span></a>
+		        	<br>
+		        	<a href="/partners"><span class="footer-link">PARTNERS</span></a>
+		        	<br>
+		        	<a href="/careers"><span class="footer-link">CAREERS</span></a>
+		        	<br>
+		        	<a href="/blogs"><span class="footer-link">BLOGS</span></a>
+		        	<br>
+		        	<a href="/contact"><span class="footer-link">CONTACT</span></a>
+	        	</div>
+        	</div>
+        	<div class="col-md-6" style="align-content: right">
+
+        		<img src="img/newlogo.png" width="300" style="float: right; padding-top: 2vh;">
+        		<div id="social">
+        		<a href="https://twitter.com/vinci_vr" target="_blank"><img src="/img/twitter-fav.png" class="social-icon"></a>
+        		<a href="https://www.linkedin.com/company/vincivr/about/?viewAsMember=true"><img src="/img/linkedin-fav.png" class="social-icon"></a>
+        	</div>
+        	</div>
+        	
+        </section>
+  </body>
+</html>

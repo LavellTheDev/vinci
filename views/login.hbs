@@ -1,0 +1,41 @@
+{{#if error}}
+    <div class="alert alert-danger" role="alert">
+        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+      {{error}}
+    </div>
+{{/if}}
+
+
+<head>
+    <link href="/css/login.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+</head>
+
+<body id = "login">
+    <a class="navbar-brand logoText" id = "dashboardLogo">V I N C I</a>
+    <form id = "loginForm" method="POST" style="max-width: 300px; margin: auto; margin-top: 50px">
+        
+
+        <div id = "usernameGroup">
+            <label id = "usernameText">USERNAME</label>
+            <input id = "usernameInput" type="text" name="username">
+        </div>
+        <div id = "passwordGroup">
+            <label id = "passwordText">PASSWORD</label>
+            <input id = "passwordInput" type="password" name="password">
+        </div>
+
+        
+        <div id = "buttonGroup">
+            <button id = "loginButton">LOGIN</button>
+            <!--
+            <a class="btn btn-primary" href="/register">Go To Register</a>
+            -->
+        </div>
+
+        <p id = "terms">By using VINCI, you agree to our <a href="/terms" target="_blank"><u>Terms Of Service</u></a></p>
+        
+    </form>
+</body>

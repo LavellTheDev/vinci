@@ -1,0 +1,26 @@
+{{#if error}}
+    <div class="alert alert-danger" role="alert">
+        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+      {{error}}
+    </div>
+{{/if}}
+
+<head>
+    <link href="/css/logout.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+</head>
+
+<body>
+
+	<p class="navbar-brand logoText" id = "dashboardLogo">V I N C I</p>
+
+	<div id = 'logoutMessage'>
+		<p>YOU HAVE BEEN SUCCESSFULLY LOGGED OUT.</p>
+		<a href="/login">LOGIN</a>
+		<a href="/">HOME</a>
+	</div>
+
+</body>
+

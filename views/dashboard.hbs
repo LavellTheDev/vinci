@@ -1,0 +1,140 @@
+{{#if error}}
+    <div class="alert alert-danger" role="alert">
+        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+      {{error}}
+    </div>
+{{/if}}
+
+<head>
+	<link href="/css/dashboard.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+</head>
+
+<body id = "dashboard">
+
+		<a class="navbar-brand logoText" id = "dashboardLogo">V I N C I</a>
+		<div id = "welcome">WELCOME, <br>{{username}}.</div>
+		<p id = "testspace"></p>
+
+
+		<form action="/dashboard-upload" class="uploadForm" method="POST" enctype="multipart/form-data">
+			<input type="file" name = "myFile" value='upload' id="myFile" multiple size="50" onchange= "this.form.submit()">
+			<label id="fileButton" for="myFile">UPLOAD</label>
+
+			
+			
+			<p id = "chosenFile"></p>
+			<!-- <input type="submit" id = "dashboardSubmit"> -->
+		</form>
+
+		<form action="/dashboard-trash" class="uploadForm" method="POST" enctype="multipart/form-data">
+			<input type="image" src="../img/trashcan.png" name='deleteFile' value='trashcan' id = 'trashcan' onchange="this.form.submit()"/>
+		</form>
+
+		<a href="/logout" id = "logoutButton">LOGOUT</a>
+
+		<p id = "listName">NAME </p>
+		<p id = "listSize">SIZE </p>
+		<p id = "listModified">MODIFIED </p>
+
+		<div class = 'models'>
+			<table>
+				{{#each models}}
+					<tr value="test">
+						<th class = 'model'>{{Key}}</th>
+						<th class = 'lastMod'>{{LastModified}}</th>
+						<th class = 'size'>{{Size}} Bytes</th>
+					</tr>
+				{{/each}}
+			</table>
+		</div>
+
+</body>
+
+<script type="text/javascript">
+
+
+	$(document).ready(function(){
+
+	    function fileNotify(){
+	    	var f = document.getElementById("myFile").value;
+			f = f.replace(/.*[\/\\]/, '');
+	        document.getElementById("chosenFile").innerHTML = "Uploading " + f + "...";   
+	    }
+	    $("#myFile").on("change", fileNotify);
+
+	    function deleteNotify() {
+	        document.getElementById("chosenFile").innerHTML = "Deleting " + $('#trashcan')[0].value + "...";   
+	    }
+	    $("#trashcan").click(deleteNotify);
+
+
+
+	    $('tr').click(function() {
+
+	    	if ($(this).hasClass('selected')) {
+	    		$('.selected').removeClass('selected');
+	    		$('#trashcan')[0].value = null;
+	    	} else {
+	    		$('.selected').removeClass('selected');
+	    		$('#trashcan')[0].value = $(this).find('th.model').get(0).innerHTML;
+	    		$(this).addClass('selected');
+	    	}
+
+	    	//document.getElementById("chosenFile").innerHTML = "You've selected: " + $('#trashcan')[0].value;
+	    });
+
+	});
+</script>
+
+<!--
+<script>
+
+	var AWS = require('aws-sdk');
+	var s3 = new AWS.S3();
+
+	var fsystem = require('fs');
+	var FileReader = require('filereader');
+
+	function handleFile() {
+		document.getElementById("testspace").innerHTML = "FILE UPLOADED!";
+	}
+
+	function submitFile() {
+		//send request to amazon?
+
+		//var filereader = new FileReader();
+
+		var selectedFile = document.getElementById('myFile').files[0];
+		
+		document.getElementById("testspace").innerHTML = document.getElementById('myFile').files[0].name;
+		document.getElementById("testspace").innerHTML = "YOOO";
+		
+
+
+		var params = {
+			Body: document.getElementById('myFile').files[0],
+			Bucket: "masschallenge.01",
+			Key: document.getElementById('myFile').files[0].name
+		}
+		
+		document.getElementById("testspace").innerHTML = "down here";
+
+		s3.putObject(params, function (err, data) {
+			if (err) {
+				document.getElementById("testspace").innerHTML = "ERROR;
+				console.log("Post call didn't work!");
+				console.log(err, err.stack)
+			} else {
+				document.getElementById("testspace").innerHTML = "SUCCESS";
+				console.log("Successful post!");
+			}
+		});
+		document.getElementById("testspace").innerHTML = "very bottom";
+	}
+</script>
+-->
+
+

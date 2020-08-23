@@ -1,0 +1,17 @@
+.hero-section {
+  background-image: url("../img/solutions-hero-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid red;
+}
+
+li {
+  list-style: initial;
+  padding-bottom: 2rem;
+}
+
+nav li {
+  list-style: none;
+  padding-bottom: 0;
+}
