@@ -38,6 +38,10 @@ body{
   background: rgba(37, 37, 37, 0.95);
 }
 
+#vitruve{
+  width: 85%;
+}
+
 /*STYLING FOR MODAL IMAGE*/
 
 #myImg {
