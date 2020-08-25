@@ -1,14 +1,15 @@
-.contents {
+/* .contents {
   width: 100%;
   height: 100vh;
-}
+  padding: 4rem;
+} */
 
 .panel {
   background-color: #191919;
 }
 
 .hero-img {
-  background-image: url("../assets/figma-imgs/careers-hero-img.png");
+  background-image: url("../img/careers-hero-img.png");
   background-size: cover;
   background-position:center;
   background-repeat: no-repeat;
@@ -20,6 +21,10 @@ p {
 
 .resp {
   padding: 2rem;
+}
+
+details {
+  padding: 0.5rem;
 }
 
 details:nth-child(2n+1) {
