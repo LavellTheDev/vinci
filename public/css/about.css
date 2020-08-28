@@ -50,9 +50,11 @@ body{
   transition: 0.3s;
 }
 
+
 #myImg:hover {
   opacity: 0.7;
 }
+
 
 .modal {
   display: none;
@@ -66,9 +68,9 @@ body{
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
+  /* Half width */
   height: 100%;
-  /* Full height */
+  /* Half height */
   overflow: auto;
   /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
@@ -80,7 +82,7 @@ body{
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
+  width: 30%;
   max-width: 700px;
 }
 
@@ -99,6 +101,17 @@ body{
 #caption {
   animation-name: zoom;
   animation-duration: 0.6s;
+}
+
+.bio{
+    border: 1px solid black;
+    background: #c4c4c4;
+    position: absolute;
+    opacity: 0.8;
+    left: 775px;
+    top: 175px;
+    height: 250px;
+    width: 230px;
 }
 
 @keyframes zoom {
