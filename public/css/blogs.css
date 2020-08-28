@@ -1,0 +1,11 @@
+body {
+  font-family: 'Spectral', serif !important;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.p6 p{
+  color: #67a;
+}
