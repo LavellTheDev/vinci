@@ -16,6 +16,7 @@ module.exports = {
         'body': ['Spectral'],
       },
       spacing: {
+        '50': '13rem',
         '64': '16rem',
         '72': '18rem',
         '78': '20rem',
