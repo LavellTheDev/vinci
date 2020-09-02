@@ -1,0 +1,13 @@
+body {
+	background-color: black;
+}
+
+#logo {
+	position: absolute;
+	z-index: 5;
+	left: 50px;
+	top: 30px;
+	font-family: "Anur";
+	font-size: 20px;
+	color: white;
+}
