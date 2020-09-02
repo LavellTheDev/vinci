@@ -64,7 +64,7 @@ flex-direction: column;
 justify-content: center;
 margin: auto;
 padding: 0 0 0 0;
-width: 100%;
+width: 45%;
 max-width: 1200px;
 }
 
@@ -116,7 +116,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 color: white;
 position: absolute;
 top: 10px;
-right: 25px;
+right: 50px;
 font-size: 35px;
 font-weight: bold;
 }
@@ -132,7 +132,7 @@ cursor: pointer;
 .next {
 cursor: pointer;
 position: absolute;
-top: 70%;
+top: 85%;
 width: auto;
 padding: 16px;
 margin-top: -50px;
@@ -156,12 +156,15 @@ background-color: rgba(0, 0, 0, 0.8);
 }
 
 .biotext {
-background-color: grey;
+background-color: #c4c4c4;
+color: #191919;
+opacity: 0.8;
 padding: 2rem;
-width: 50%;
-height: auto;
+width: 55%;
+height: 300px;
+max-height: 350px;
 position: absolute;
 z-index: 1;
 margin-top: 20%;
-margin-left: 70%;
+margin-left: 71%;
 }
