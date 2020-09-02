@@ -24,6 +24,22 @@ body{
   height: 12px;
 }
 
+.imgSize1, .imgSize2{
+  background: red;
+  height: 468px;
+  width: 330px;
+}
+
+.imgSize1{
+  background-image: url("../img/vitruve.jpg");
+  background-size: cover;
+}
+
+
+.imgSize2{
+  background-image: url("../img/leo.png");
+  background-size: cover;
+  }
 
 /* Eventually give all the same class */
 

@@ -57,9 +57,9 @@ body{
   background: -o-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('../img/spotlight.png');
   background: -moz-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('../img/spotlight.png');
   background: linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('../img/spotlight.png');
-background-size: cover;
-background-position: 50% 20%;
-text-align: right;
+  background-size: cover;
+  background-position: 50% 50%;
+  text-align: right;
 }
 
 .fourth{
