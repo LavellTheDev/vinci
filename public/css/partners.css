@@ -37,33 +37,38 @@ body{
       background: -moz-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://images.unsplash.com/photo-1562361226-6a0a40ef3718?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60');
       background: linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://images.unsplash.com/photo-1562361226-6a0a40ef3718?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60');
       background-size: contain;
-      background-repeat: no-repeat;
-      background-position: ;
-      text-align: right;
-      object-fit: cover;
 }
 
 .second{
       color: #fff;
-      background: -webkit-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://www.nasa.gov/sites/default/files/thumbnails/image/pia21421-cr.jpg');
-      background: -o-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://www.nasa.gov/sites/default/files/thumbnails/image/pia21421-cr.jpg');
-      background: -moz-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://www.nasa.gov/sites/default/files/thumbnails/image/pia21421-cr.jpg');
-      background: linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://www.nasa.gov/sites/default/files/thumbnails/image/pia21421-cr.jpg');
+      background: -webkit-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://images.unsplash.com/photo-1587168173357-99c7e95fb5cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60');
+      background: -o-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://images.unsplash.com/photo-1587168173357-99c7e95fb5cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60');
+      background: -moz-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://images.unsplash.com/photo-1587168173357-99c7e95fb5cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60');
+      background: linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://images.unsplash.com/photo-1587168173357-99c7e95fb5cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60');
     background-size: cover;
     background-position: 50% 20%;
     text-align: right;
 }
 
+
 .third{
-  background: -webkit-linear-gradient(110deg, #191919 33%, rgba(0, 0, 0, 0) 33%), -webkit-linear-gradient(110deg, #5e5c5c 66%, #191919 66%);
-  background: -o-linear-gradient(110deg, #191919 33%, rgba(0, 0, 0, 0) 33%), -o-linear-gradient(110deg, #5e5c5c 66%, #191919 66%);
-  background: -moz-linear-gradient(110deg, #191919 33%, rgba(0, 0, 0, 0) 33%), -moz-linear-gradient(110deg, #5e5c5c 66%, #191919 66%);
-  background: linear-gradient(110deg, #191919 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #5e5c5c 66%, #191919 66%);
+  color: #fff;
+  background: -webkit-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('../img/spotlight.png');
+  background: -o-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('../img/spotlight.png');
+  background: -moz-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('../img/spotlight.png');
+  background: linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('../img/spotlight.png');
+background-size: cover;
+background-position: 50% 20%;
+text-align: right;
 }
 
 .fourth{
-    background: -webkit-linear-gradient(70deg, #191919  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #5e5c5c 60%, #191919 60%);
-    background: -o-linear-gradient(70deg, #191919  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #5e5c5c 60%, #191919 60%);
-    background: -moz-linear-gradient(70deg, #191919  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #5e5c5c 60%, #191919 60%);
-    background: linear-gradient(70deg, #191919  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #5e5c5c 60%, #191919 60%);
+  color: #fff;
+  background: -webkit-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://images.unsplash.com/photo-1567789884554-0b844b597180?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background: -o-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://images.unsplash.com/photo-1567789884554-0b844b597180?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background: -moz-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://images.unsplash.com/photo-1567789884554-0b844b597180?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background: linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://images.unsplash.com/photo-1567789884554-0b844b597180?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+background-size: cover;
+background-position: 50% 20%;
+text-align: right;
 }
