@@ -7,10 +7,13 @@
     <!-- <link rel="stylesheet" href="../public/css/index.css"> -->
     <link rel="stylesheet" href="../public/css/output-styles.css">
     <link rel="stylesheet" href="../public/css/panels.css">
+    <link rel="stylesheet" href="../public/css/mobile.css">
     <title>Vinci VR</title>
   </head>
   <body class="text-primary bg-secondary font-serif">
-    <section id="container" class="main-wrapper overflow-x-hidden">
+    <section id="container" class="overflow-x-hidden">
+      <div class="main-wrapper">
+
 
         <section class="hero-section panel text-center h-screen w-full">
           <!--==================
@@ -304,10 +307,27 @@
            </footer>
         </section>
       </section>
-
       <!-- end of main section container -->
-</section>
-    <!-- SCRIPTS -->
+
+        </div>
+
+
+      <!-- beginning of main mobile view container -->
+
+      <section class="mobile-main">
+        <section class="panel first">
+          <h1>Hi mobile view!</h1>
+        </section>
+        <section class="panel second">
+          <h1>Panel 2</h1>
+        </section>
+      </section>   <!-- end of mobile container -->
+
+     </section> <!-- end of panel container -->
+
+ <!-- ===============
+     SCRIPTS
+ =================== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
     <script src ="../public/js/indexnew.js"></script>

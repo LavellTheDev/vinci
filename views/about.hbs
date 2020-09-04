@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../public/css/about.css">
-    <link rel="stylesheet" href="../public/css/output-styles.css">
     <link rel="stylesheet" href="../public/css/bios.css">
+    <link rel="stylesheet" href="../public/css/output-styles.css">
+    <link rel="stylesheet" href="../public/css/mobile.css">
     <title></title>
   </head>
   <body class="font-serif">
@@ -13,479 +14,497 @@
         font-family: "Montserrat", sans-serif !important;
       }
     </style>
-    <section id = "container" class="main-wrapper overflow-x-hidden">
-     <section id="cover" class="bg-no-repeat bg-center bg-cover text-primary panel background cover overflow-hidden w-full h-screen hero-section" style="background-image: url('../public/img/about-cover.png')">
-          <header class="text-gray-700 body-font ">
-              <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                <a href="/" class="flex items-center mb-4 md:mb-0">
-                  <img class="w-1/6 -mt-2" src="../public/img/vinci-logo.png" alt="">
-                </a>
-                <nav class="md:ml-auto lg:ml-auto flex flex-wrap items-center z-10 text-base justify-center text-primary text-lg font-semibold">
-                  <a href="/about" class="mr-5 hover:text-gray-900">About</a>
-                  <a href="/services" class="mr-5 hover:text-gray-900">Solutions</a>
-                  <a href="/partners" class="mr-5 hover:text-gray-900">Partners</a>
-                  <a href="/careers" class="mr-5 hover:text-gray-900">Careers</a>
-                  <a href="/blogs" class="mr-5 hover:text-gray-900">Blogs</a>
-                  <a href="/contact" class="mr-5 hover:text-gray-900">Contact</a>
-                </nav>
-              </div>
-          </header>
-          <hr class="-mt-4">
-          <h1 class="text-4xl text-center tracking-wider p-2 mt-48 font-sans font-semibold sm:text-4xl md:text-4xl xlg:text-4xl uppercase">ABOUT</h1>
-          <hr class="coverHr w-1/4 center mx-auto">
-          <div class="tracking-widest text-center pt-1">
-            <p>Learn more about VINCI's</p>
-            <p>mission, origin and teams</p>
-          </div>
-       </section>
-       <section class="panel bg-secondary">
-           <section class="lg:flex mb-4 ">
-              <div class="w-3/5 ml-20 m-2 mt-6 p-6 pt-14">
-                  <h2 class ="text-primary font-semibold text-3xl text-left tracking-wider font-sans">
-                      A Note From VINCI
-                  </h2>
-                  <hr class="mt-4">
-                  <p class="text-primary text-left mt-6 tracking-widest leading-8">
-                    Virtual Reality is one of the greatest communication and knowledge transfer
-                    tools ever invented. But before its benefits can be fully realized,
-                    the barrier to create simulations must be overcome.
-                    <br> <br>
-                    VINCI creates tools to lower the complexity, knowledge, and cost needed
-                    to create and manage Virtual Reality simulations. Through our innovations,
-                    we will enable a new generation of thinkers, creators, and instructors
-                    to create their own.
-                   </p>
-              </div>
-              <div class="w-2/5 p-12">
-                  <div class="imgSize1">
-                      <!-- <img id="vitruve" class="object-cover h-full mt-6" src="../public/img/vitruve.jpg" alt=""> -->
-                  </div>
-              </div>
-            </section>
-      </section>
 
-      <section class="lg:flex pb-6 mb-4 text-primary panel bg-secondary">
-        <div class="w-3/5 ml-20 m-2 mt-6 p-6 pt-14">
-          <h2 class="text-primary font-semibold text-3xl text-left tracking-wider font-sans"> Origins </h2>
-          <hr class="mt-4">
-          <p class="pb-4 text-primary text-left mt-6 tracking-widest leading-6">600 years ago, Leonardo da Vinci was filling the pages of his CODEX notebooks with fascinating observations and inventions such as the human brain and optics.
-          <br><br>
-          Vinci's world was not only brilliant, but was also well documented; highly detailed sketches accompanied diagrams and astute observations. Read the CODEX Leicester here.VINCI creates tools to lower the complexity, knowledge, and cost needed to create and manage Virtual Reality simulations. Through our innovations, we will enable a new generation of thinkers, creators, and instructors to create their own.
-          <br><br>
-          Vinci is fascinating because of his ability to share complex worlds with such detail and realism; CODEX's ability to perfectly capture new worlds is unparalleled.
-          <br><br>
-          Inspired by Vinci, we at VINCI aim to transform the way we communicate and educate the world through a new medium: Virtual Reality.
-          </p>
-        </div>
-        <div class="w-2/5 p-12">
-            <div class="imgSize2">
-                <!-- <img class="object-cover lg:h-full mt-6" src="../public/img/leo.png" alt="picture of davinci"> -->
-            </div>
-        </div>
-      </section>
-
-      <section class=" mb-4 text-primary panel bg-secondary">
-        <section class="text-gray-700 body-font">
-              <div class="container pr-8 pl-4 py-24 mx-auto">
-                <div class="flex flex-col text-center w-full mb-20">
-                <!--Come back here later to practice responsive-->
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-primary font-sans">Our Team</h1>
-                  <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-primary">Click an image to learn more about our team members.</p>
-                </div>
-                <div class="flex flex-wrap -m-2">
-
-                  <section id="test" class="w-full p-4">
-                    <!-- Here is your access point for your user, a preview of the images you wish to display.
-                        You use the onclick="" event handler to execute the methods you will define in the
-                        JavaScript near the bottom -->
-
-                    <div class="row m-4">
-
-                      <!--======================EAGLE's Section =====================
-                    ================================================================-->
-
-                     <div class="col">
-                        <div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-red-700 cursor-pointer" onclick="openLightbox();toSlide(1)" class="hover-shadow preview">
-                          <img id="myImg" alt="" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/eagle.png">
-                          <div id="myModal" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="img01">
-                            <div class="bio p-2">
-                               <h2 class="text-left text-lg mt-2 mb-1">Eagle Wu</h2>
-                              <hr class="mb-1">
-                              <h5 class="text-left text-sm">Enterpreneurship @Babson College</h5>
-                              <h5 class="text-left text-sm">Winner, Money 20/20 Hackathon</h5>
-                              <hr class="mt-1">
-                              <p class="text-xs text-left mt-3">
-
-                              </p>
-                            </div>
-                          </div>
-                          <div class="flex-grow">
-                            <h2 class="text-primary title-font font-medium">Eagle Wu</h2>
-                            <p class="text-third">Business Dev</p>
-                          </div>
-                        </div>
-                     </div>
-
-                     <!--=================Tim's Section==============================
-                   ==================================================================== -->
-                     <div class="col">
-                       <div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-red-700 cursor-pointer" onclick="openLightbox();toSlide(2)" class="hover-shadow preview">
-                         <img id="myImg" alt="" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/tim.png">
-                         <div id="myModal" class="modal">
-                           <span class="close">&times;</span>
-                           <img class="modal-content" id="img01">
-                           <div class="bio p-2">
-                              <h2 class="text-left text-lg mt-2 mb-1">Tim Clancy</h2>
-                             <hr class="mb-1">
-                             <h5 class="text-left text-sm">UPDATE</h5>
-                             <h5 class="text-left text-sm">UPDATE</h5>
-                             <hr class="mt-1">
-                             <p class="text-xs text-left mt-3">UPDATE UPDATE UPDATE</p>
-                           </div>
-                         </div>
-                         <div class="flex-grow">
-                           <h2 class="text-primary title-font font-medium">Tim Clancy</h2>
-                           <p class="text-third">Engineer</p>
-                         </div>
-                       </div>
-                        <!-- <img src="../public/img/tim.png" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Tim." /> -->
-                     </div>
-
-                     <!--=================Liam's Section==============================
-                   ==================================================================== -->
-                     <div class="col">
-                       <div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-red-700 cursor-pointer" onclick="openLightbox();toSlide(3)" class="hover-shadow preview">
-                         <img id="myImg" alt="" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/liam.png">
-                         <div id="myModal" class="modal">
-                           <span class="close">&times;</span>
-                           <img class="modal-content" id="img01">
-                           <div class="bio p-2">
-                              <h2 class="text-left text-lg mt-2 mb-1">Liam Clancy</h2>
-                             <hr class="mb-1">
-                             <h5 class="text-left text-sm">UPDATE</h5>
-                             <h5 class="text-left text-sm">UPDATE</h5>
-                             <hr class="mt-1">
-                             <p class="text-xs text-left mt-3">UPDATE UPDATE UPDATE</p>
-                           </div>
-                         </div>
-                         <div class="flex-grow">
-                           <h2 class="text-primary title-font font-medium">Liam Clancy</h2>
-                           <p class="text-third">Developer</p>
-                         </div>
-                       </div>
-                     </div>
-
-                     <!--=================Matt's Section==============================
-                   ==================================================================== -->
-                    </div>
-                     <div class="row m-4">
-                       <div class="col">
-                         <div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-red-700 cursor-pointer" onclick="openLightbox();toSlide(4)" class="hover-shadow preview">
-                           <img id="myImg" alt="" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/matt.png">
-                           <div id="myModal" class="modal">
-                             <span class="close">&times;</span>
-                             <img class="modal-content" id="img01">
-                             <div class="bio p-2">
-                                <h2 class="text-left text-lg mt-2 mb-1">Matthew Oh</h2>
-                               <hr class="mb-1">
-                               <h5 class="text-left text-sm">UPDATE</h5>
-                               <h5 class="text-left text-sm">UPDATE</h5>
-                               <hr class="mt-1">
-                               <p class="text-xs text-left mt-3">UPDATE UPDATE UPDATE</p>
-                             </div>
-                           </div>
-                           <div class="flex-grow">
-                             <h2 class="text-primary title-font font-medium">Matthew Oh</h2>
-                             <p class="text-third">Business Dev Analyst</p>
-                           </div>
-                         </div>
-                          <!-- <img src="../public/img/matt.png" onclick="openLightbox();toSlide(4)" class="hover-shadow preview" alt="Matt" /> -->
-                     </div>
-
-                     <!--=================Sloan's Section==============================
-                   ==================================================================== -->
-                     <div class="col">
-                       <div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-red-700 cursor-pointer" onclick="openLightbox();toSlide(5)" class="hover-shadow preview">
-                         <img id="myImg" alt="" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/img1.png">
-                         <div id="myModal" class="modal">
-                           <span class="close">&times;</span>
-                           <img class="modal-content" id="img01">
-                           <div class="bio p-2">
-                              <h2 class="text-left text-lg mt-2 mb-1">Sloan Poelman</h2>
-                             <hr class="mb-1">
-                             <h5 class="text-left text-sm">UPDATE</h5>
-                             <h5 class="text-left text-sm">UPDATE</h5>
-                             <hr class="mt-1">
-                             <p class="text-xs text-left mt-3">UPDATE UPDATE UPDATE</p>
-                           </div>
-                         </div>
-                         <div class="flex-grow">
-                           <h2 class="text-primary title-font font-medium">Sloan Poelman</h2>
-                           <p class="text-third">3D modeler</p>
-                         </div>
-                       </div>
-                     </div>
-
-                     <!--======================Laura's Section =====================
-                   ================================================================-->
-                     <div class="col">
-                       <div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-red-700 cursor-pointer" onclick="openLightbox();toSlide(6)" class="hover-shadow preview">
-                         <img id="myImg" alt="" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/laura.png">
-                         <div id="myModal" class="modal">
-                           <span class="close">&times;</span>
-                           <img class="modal-content" id="img01">
-                           <div class="bio p-2">
-                              <h2 class="text-left text-lg mt-2 mb-1">Laura Prados-Bacó</h2>
-                             <hr class="mb-1">
-                             <h5 class="text-left text-sm">UPDATE</h5>
-                             <h5 class="text-left text-sm">UPDATE</h5>
-                             <hr class="mt-1">
-                             <p class="text-xs text-left mt-3">UPDATE UPDATE UPDATE</p>
-                           </div>
-                         </div>
-                         <div class="flex-grow">
-                           <h2 class="text-primary title-font font-medium">Laura Prados-Bacó</h2>
-                           <p class="text-third">Marketing</p>
-                         </div>
-                       </div>
-                     </div>
-                     </div>
-
-                    <!-- This is your lightbox, it is contained in a modal. Here you provide all the images,
-                        controls, and another set of preview images as the dots. Dots show your user which
-                        image is currently active. Note that you use entities (e.g. &times;), more info on
-                        them at the bottom. -->
-
-
-                  <!--==============================================================================
-                  ==================THE CODE BELOW IS THE IMAGE WHEN IT"S CLICKED=====================
-                  ====================================================================================
-                  =================================================================================== -->
-
-                    <div id="Lightbox" class="modal">
-                     <span class="close pointer" onclick="closeLightbox()">&times;</span>
-                     <div class="modal-content">
-
-                      <!--=======================EAGLE's Section =====================
-                     ================================================================-->
-                       <div class="slide">
-                         <section class="biotext">
-                           <h1 class="text-left text-xl font-medium mb-1 -mt-2">Eagle Wu</h1>
-                           <hr>
-                           <h5 class="text-left text-sm">Enterpreneurship @Babson College</h5>
-                           <h5 class="text-left text-sm">Winner, Money 20/20 Hackathon</h5>
-                           <hr class="mb-3">
-                           <div class="hidden-text-team overflow-x-auto">
-                               <p class="text-left  text-sm ">
-                                 Eagle Wu grew up in Philadelphia before going to Babson College to study
-                                 entrepreneurship. He founded VINCI while a student and is the CEO of the company. He is
-                                 focused on growing VINCI's tools and team to help solve training problems across various
-                                 industries. Eagle's passions include video games and space.
-
-                               </p>
-                         </div>
-                         </section>
-                           <img src="../public/img/eagle.png" class="image-slide" alt="Eagle Wu" />
-                       </div>
-
-                       <!--======================Tim's Section =====================
-                     ================================================================-->
-                       <div class="slide">
-                         <section class="biotext">
-                           <h1 class="text-left text-xl font-medium mb-1 -mt-2">Tim Clancy</h1>
-                           <hr>
-                           <h5 class="text-left text-sm">Computer Science, MS @UPenn</h5>
-                           <h5 class="text-left text-sm">Lead Developer, Salad Blockchain</h5>
-                           <hr class="mb-3">
-                           <div class="hidden-text-team overflow-x-auto">
-                               <p class="text-left  text-sm ">
-                                 Tim Clancy is a native of southern Massachusetts currently living in Ithaca, New York.
-                                 In 2018 he received his BSE and MSE in computer science from the University of Pennsylvania
-                                 after accelerating a five year submatriculation program to completion in four years. He is the
-                                 co-founder and current CTO of VINCI, where he oversees engineering efforts directed towards
-                                 improving modern virtual reality training solutions. Tim is also passionate about blockchain
-                                 technology, gaming in general, and gardening
-
-                               </p>
-                         </div>
-                         </section>
-                           <img src="../public/img/tim.png" class="image-slide" alt="Tim Clancy" />
-                       </div>
-
-                       <!--======================Liam's Section =====================
-                     ================================================================-->
-                       <div class="slide">
-                           <section class="biotext">
-                             <h1 class="text-left text-xl font-medium mb-1 -mt-2">Liam Clancy</h1>
-                             <hr>
-                             <h5 class="text-left text-sm">Computer Science @Boston University</h5>
-                             <h5 class="text-left text-sm"></h5>
-                             <hr class="bio-hr mb-3">
-                             <div class="hidden-text-team overflow-x-auto">
-                                 <p class="text-left  text-sm ">
-                                   Liam Clancy was born in Providence, Rhode Island, and received his education at Boston
-                                   University for Computer Science. He is a developer for VINCI, where his primary focus is on
-                                   the CODEX platform and applications interfacing with the simulation, such as the Instructor
-                                   Monitoring Station. In his spare time, Liam works on a farm, enjoys spending time with his
-                                   friends, and hangs out with his bird.
-                                 </p>
-                           </div>
-                           </section>
-                             <img src="../public/img/liam.png" class="image-slide" alt="Tim Clancy" />
-                       </div>
-
-
-                       <!--======================Matt's Section =====================
-                     ================================================================-->
-                       <div class="slide">
-                         <section class="biotext">
-                           <h1 class="text-left text-xl font-medium mb-1 -mt-2">Matthew Oh</h1>
-                           <hr>
-                           <h5 class="text-left text-sm">Economics @Tuft University</h5>
-                           <h5 class="text-left text-sm"></h5>
-                           <hr class="mb-3">
-                           <div class="hidden-text-team overflow-x-auto">
-                               <p class="text-left  text-sm ">
-                                 Matthew Oh is the Business Development Analyst at Vinci. Originally from the Bay
-                                 Area, he is a student at Tufts University, majoring in Economics and minoring in Finance &
-                                 English. At Vinci, Matthew is responsible for research and outreach — primarily in the private
-                                 sector. In his free time, Matthew enjoys watching sports and cooking.
-                               </p>
-                         </div>
-                         </section>
-                           <img src="../public/img/matt.png" class="image-slide" alt="Tim Clancy" />
-                       </div>
-
-                       <!--======================Sloan's Section =====================
-                     ================================================================-->
-                       <div class="slide">
-                         <section class="biotext">
-                           <h1 class="text-left text-xl font-medium mb-1 -mt-2">Sloan Poelman</h1>
-                           <hr>
-                           <h5 class="text-left text-sm">Graduate @BYU</h5>
-                           <h5 class="text-left text-sm">2x BYU Animation Award Winner</h5>
-                           <hr class="mb-3">
-                           <div class="hidden-text-team overflow-x-auto">
-                               <p class="text-left  text-sm ">
-                                Sloan Poelman is a passionate multimedia artist strong in stylized and realistic
-                                rendering styles. Originally from Orem, Utah, he worked with a team at Brigham Young
-                                University to compete on a national level with two video games, and received BYU Design
-                                Department Talent awards for two consecutive years for innovative work in animation.
-                                Currently, he is a 3D modeler at Vinci VR, where he ensures that the 3D models created are
-                                accurate to their real world counterparts. In his free time, Sloan enjoys listening to audio books,
-                                exercising, and spending time with his family.
-                               </p>
-                         </div>
-                         </section>
-                           <img src="../public/img/img1.png" class="image-slide" alt="Tim Clancy" />
-                       </div>
-
-                       <!--======================Laura's Section =====================
-                     ================================================================-->
-                       <div class="slide">
-                         <section class="biotext">
-                           <h1 class="text-left text-xl font-medium mb-1 -mt-2">Laura Prados-Bacó</h1>
-                           <hr>
-                           <h5 class="text-left text-sm  mb-1">Studying @Babson College</h5>
-                           <h5 class="text-left text-sm  mb-1"></h5>
-                           <hr class="mb-3">
-                           <div class="hidden-text-team overflow-x-auto">
-                               <p class="text-left  text-sm ">
-                                 Laura Prados-Bacó was born and raised in San Juan, Puerto Rico. At 18 years old, she left
-                                 Puerto Rico to pursue an education at Babson College. She currently holds the Marketing
-                                 position in the Business Development division at Vinci, where she aids with the creation of
-                                 marketing materials, brand management, and PR-related tasks. When not working, Laura likes
-                                 to read, skateboard, and spend time with her friends.
-                               </p>
-                         </div>
-                         </section>
-                           <img src="../public/img/laura.png" class="image-slide" alt="Tim Clancy" />
-                       </div>
-
-                       <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
-                       <a class="next" onclick="changeSlide(1)">&#10095;</a>
-
-                       <div class="dots">
-                         <div class="col">
-                           <img src="../public/img/eagle.png" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Eagle" />
-                         </div>
-                         <div class="col">
-                           <img src="../public/img/tim.png" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Tim" />
-                         </div>
-                         <div class="col">
-                           <img src="../public/img/liam.png" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="Liam" />
-                         </div>
-                         <div class="col">
-                           <img src="../public/img/matt.png" class="modal-preview hover-shadow" onclick="toSlide(4)" alt="Matt" />
-                         </div>
-                         <div class="col">
-                           <img src="../public/img/img1.png" class="modal-preview hover-shadow" onclick="toSlide(5)" alt="" />
-                         </div>
-                         <div class="col">
-                           <img src="../public/img/laura.png" class="modal-preview hover-shadow" onclick="toSlide(6)" alt="laura" />
-                         </div>
-                       </div>
-                     </div>
-                    </div>
-                  </section>
-
-
-                  <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-
-                </div>
-              </div>
-            </section>
-        </section>
-
-        <section class="bg-secondary panel">
-           <footer class="bg-secondary bg-bottom bg-cover text-primary body-font  p-4 md:mt-24 lg:mt-24" style="background-image: url('../public/img/contactbckgrnd.png')">
-             <h1 class ="text-primary text-center sm:text-4xl text-3xl font-sans">Want to Learn More About VR Training?</h1>
-             <div class="flex flex-col justify-center mt-24">
-               <a class="flex flex-col justify-center" href="/blogs">
-                 <button class="w-1/5 mx-auto text-white border-solid border-2 py-2 px-6 focus:outline-none hover:bg-red-600 text-lg">Check Out Our Blogs</button>
-               </a>
-               <p class="mx-auto text-Center text-2xl text-primary text-semibold">-or-</p>
-               <a class="flex flex-col justify-center" href="/contact">
-                 <button class=" w-1/5 mx-auto text-white border-sloid border-2 py-2 px-6 focus:outline-none hover:bg-red-600 text-lg">Reach Out To Us</button>
-               </a>
-            </div>
-             </div>
-             <div class=" container px-5 py-32 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
-               <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
-                 <img class="-mt-2" src="../public/img/vinci-logo.png" alt="">
-               </div>
-               <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
-                 <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                   <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"></h2>
-                   <nav class="list-none mb-10 -mt-24">
-                     <li>
-                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href="/about">ABOUT</a>
-                     </li>
-                     <li>
-                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href="/services">SOLUTIONS</a>
-                     </li>
-                     <li>
-                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href="/partners">PARTNERS</a>
-                     </li>
-                     <li>
-                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href="/careers">CAREERS</a>
-                     </li>
-                     <li>
-                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href="/blogs">BLOGS</a>
-                     </li>
-                     <li>
-                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href=/contact"">CONTACT</a>
-                     </li>
+    <section id = "container" class="overflow-x-hidden">
+      <div class="main-wrapper">
+        <section id="cover" class="bg-no-repeat bg-center bg-cover text-primary panel background cover overflow-hidden w-full h-screen hero-section" style="background-image: url('../public/img/about-cover.png')">
+             <header class="text-gray-700 body-font ">
+                 <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                   <a href="/" class="flex items-center mb-4 md:mb-0">
+                     <img class="w-1/6 -mt-2" src="../public/img/vinci-logo.png" alt="">
+                   </a>
+                   <nav class="md:ml-auto lg:ml-auto flex flex-wrap items-center z-10 text-base justify-center text-primary text-lg font-semibold">
+                     <a href="/about" class="mr-5 hover:text-gray-900">About</a>
+                     <a href="/services" class="mr-5 hover:text-gray-900">Solutions</a>
+                     <a href="/partners" class="mr-5 hover:text-gray-900">Partners</a>
+                     <a href="/careers" class="mr-5 hover:text-gray-900">Careers</a>
+                     <a href="/blogs" class="mr-5 hover:text-gray-900">Blogs</a>
+                     <a href="/contact" class="mr-5 hover:text-gray-900">Contact</a>
                    </nav>
                  </div>
-               </div>
+             </header>
+             <hr class="-mt-4">
+             <h1 class="text-4xl text-center tracking-wider p-2 mt-48 font-sans font-semibold sm:text-4xl md:text-4xl xlg:text-4xl uppercase">ABOUT</h1>
+             <hr class="coverHr w-1/4 center mx-auto">
+             <div class="tracking-widest text-center pt-1">
+               <p>Learn more about VINCI's</p>
+               <p>mission, origin and teams</p>
              </div>
-           </footer>
+          </section>
+          <section class="panel bg-secondary">
+              <section class="lg:flex mb-4 ">
+                 <div class="w-3/5 ml-20 m-2 mt-6 p-6 pt-14">
+                     <h2 class ="text-primary font-semibold text-3xl text-left tracking-wider font-sans">
+                         A Note From VINCI
+                     </h2>
+                     <hr class="mt-4">
+                     <p class="text-primary text-left mt-6 tracking-widest leading-8">
+                       Virtual Reality is one of the greatest communication and knowledge transfer
+                       tools ever invented. But before its benefits can be fully realized,
+                       the barrier to create simulations must be overcome.
+                       <br> <br>
+                       VINCI creates tools to lower the complexity, knowledge, and cost needed
+                       to create and manage Virtual Reality simulations. Through our innovations,
+                       we will enable a new generation of thinkers, creators, and instructors
+                       to create their own.
+                      </p>
+                 </div>
+                 <div class="w-2/5 p-12">
+                     <div class="imgSize1">
+                         <!-- <img id="vitruve" class="object-cover h-full mt-6" src="../public/img/vitruve.jpg" alt=""> -->
+                     </div>
+                 </div>
+               </section>
+         </section>
+
+         <section class="lg:flex pb-6 mb-4 text-primary panel bg-secondary">
+           <div class="w-3/5 ml-20 m-2 mt-6 p-6 pt-14">
+             <h2 class="text-primary font-semibold text-3xl text-left tracking-wider font-sans"> Origins </h2>
+             <hr class="mt-4">
+             <p class="pb-4 text-primary text-left mt-6 tracking-widest leading-6">600 years ago, Leonardo da Vinci was filling the pages of his CODEX notebooks with fascinating observations and inventions such as the human brain and optics.
+             <br><br>
+             Vinci's world was not only brilliant, but was also well documented; highly detailed sketches accompanied diagrams and astute observations. Read the CODEX Leicester here.VINCI creates tools to lower the complexity, knowledge, and cost needed to create and manage Virtual Reality simulations. Through our innovations, we will enable a new generation of thinkers, creators, and instructors to create their own.
+             <br><br>
+             Vinci is fascinating because of his ability to share complex worlds with such detail and realism; CODEX's ability to perfectly capture new worlds is unparalleled.
+             <br><br>
+             Inspired by Vinci, we at VINCI aim to transform the way we communicate and educate the world through a new medium: Virtual Reality.
+             </p>
+           </div>
+           <div class="w-2/5 p-12">
+               <div class="imgSize2">
+                   <!-- <img class="object-cover lg:h-full mt-6" src="../public/img/leo.png" alt="picture of davinci"> -->
+               </div>
+           </div>
+         </section>
+
+         <section class=" mb-4 text-primary panel bg-secondary">
+           <section class="text-gray-700 body-font">
+                 <div class="container pr-8 pl-4 py-24 mx-auto">
+                   <div class="flex flex-col text-center w-full mb-20">
+                   <!--Come back here later to practice responsive-->
+                   <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-primary font-sans">Our Team</h1>
+                     <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-primary">Click an image to learn more about our team members.</p>
+                   </div>
+                   <div class="flex flex-wrap -m-2">
+
+                     <section id="test" class="w-full p-4">
+                       <!-- Here is your access point for your user, a preview of the images you wish to display.
+                           You use the onclick="" event handler to execute the methods you will define in the
+                           JavaScript near the bottom -->
+
+                       <div class="row m-4">
+
+                         <!--======================EAGLE's Section =====================
+                       ================================================================-->
+
+                        <div class="col">
+                           <div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-red-700 cursor-pointer" onclick="openLightbox();toSlide(1)" class="hover-shadow preview">
+                             <img id="myImg" alt="" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/eagle.png">
+                             <div id="myModal" class="modal">
+                               <span class="close">&times;</span>
+                               <img class="modal-content" id="img01">
+                               <div class="bio p-2">
+                                  <h2 class="text-left text-lg mt-2 mb-1">Eagle Wu</h2>
+                                 <hr class="mb-1">
+                                 <h5 class="text-left text-sm">Enterpreneurship @Babson College</h5>
+                                 <h5 class="text-left text-sm">Winner, Money 20/20 Hackathon</h5>
+                                 <hr class="mt-1">
+                                 <p class="text-xs text-left mt-3">
+
+                                 </p>
+                               </div>
+                             </div>
+                             <div class="flex-grow">
+                               <h2 class="text-primary title-font font-medium">Eagle Wu</h2>
+                               <p class="text-third">Business Dev</p>
+                             </div>
+                           </div>
+                        </div>
+
+                        <!--=================Tim's Section==============================
+                      ==================================================================== -->
+                        <div class="col">
+                          <div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-red-700 cursor-pointer" onclick="openLightbox();toSlide(2)" class="hover-shadow preview">
+                            <img id="myImg" alt="" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/tim.png">
+                            <div id="myModal" class="modal">
+                              <span class="close">&times;</span>
+                              <img class="modal-content" id="img01">
+                              <div class="bio p-2">
+                                 <h2 class="text-left text-lg mt-2 mb-1">Tim Clancy</h2>
+                                <hr class="mb-1">
+                                <h5 class="text-left text-sm">UPDATE</h5>
+                                <h5 class="text-left text-sm">UPDATE</h5>
+                                <hr class="mt-1">
+                                <p class="text-xs text-left mt-3">UPDATE UPDATE UPDATE</p>
+                              </div>
+                            </div>
+                            <div class="flex-grow">
+                              <h2 class="text-primary title-font font-medium">Tim Clancy</h2>
+                              <p class="text-third">Engineer</p>
+                            </div>
+                          </div>
+                           <!-- <img src="../public/img/tim.png" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Tim." /> -->
+                        </div>
+
+                        <!--=================Liam's Section==============================
+                      ==================================================================== -->
+                        <div class="col">
+                          <div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-red-700 cursor-pointer" onclick="openLightbox();toSlide(3)" class="hover-shadow preview">
+                            <img id="myImg" alt="" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/liam.png">
+                            <div id="myModal" class="modal">
+                              <span class="close">&times;</span>
+                              <img class="modal-content" id="img01">
+                              <div class="bio p-2">
+                                 <h2 class="text-left text-lg mt-2 mb-1">Liam Clancy</h2>
+                                <hr class="mb-1">
+                                <h5 class="text-left text-sm">UPDATE</h5>
+                                <h5 class="text-left text-sm">UPDATE</h5>
+                                <hr class="mt-1">
+                                <p class="text-xs text-left mt-3">UPDATE UPDATE UPDATE</p>
+                              </div>
+                            </div>
+                            <div class="flex-grow">
+                              <h2 class="text-primary title-font font-medium">Liam Clancy</h2>
+                              <p class="text-third">Developer</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!--=================Matt's Section==============================
+                      ==================================================================== -->
+                       </div>
+                        <div class="row m-4">
+                          <div class="col">
+                            <div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-red-700 cursor-pointer" onclick="openLightbox();toSlide(4)" class="hover-shadow preview">
+                              <img id="myImg" alt="" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/matt.png">
+                              <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div class="bio p-2">
+                                   <h2 class="text-left text-lg mt-2 mb-1">Matthew Oh</h2>
+                                  <hr class="mb-1">
+                                  <h5 class="text-left text-sm">UPDATE</h5>
+                                  <h5 class="text-left text-sm">UPDATE</h5>
+                                  <hr class="mt-1">
+                                  <p class="text-xs text-left mt-3">UPDATE UPDATE UPDATE</p>
+                                </div>
+                              </div>
+                              <div class="flex-grow">
+                                <h2 class="text-primary title-font font-medium">Matthew Oh</h2>
+                                <p class="text-third">Business Dev Analyst</p>
+                              </div>
+                            </div>
+                             <!-- <img src="../public/img/matt.png" onclick="openLightbox();toSlide(4)" class="hover-shadow preview" alt="Matt" /> -->
+                        </div>
+
+                        <!--=================Sloan's Section==============================
+                      ==================================================================== -->
+                        <div class="col">
+                          <div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-red-700 cursor-pointer" onclick="openLightbox();toSlide(5)" class="hover-shadow preview">
+                            <img id="myImg" alt="" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/img1.png">
+                            <div id="myModal" class="modal">
+                              <span class="close">&times;</span>
+                              <img class="modal-content" id="img01">
+                              <div class="bio p-2">
+                                 <h2 class="text-left text-lg mt-2 mb-1">Sloan Poelman</h2>
+                                <hr class="mb-1">
+                                <h5 class="text-left text-sm">UPDATE</h5>
+                                <h5 class="text-left text-sm">UPDATE</h5>
+                                <hr class="mt-1">
+                                <p class="text-xs text-left mt-3">UPDATE UPDATE UPDATE</p>
+                              </div>
+                            </div>
+                            <div class="flex-grow">
+                              <h2 class="text-primary title-font font-medium">Sloan Poelman</h2>
+                              <p class="text-third">3D modeler</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!--======================Laura's Section =====================
+                      ================================================================-->
+                        <div class="col">
+                          <div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg hover:bg-red-700 cursor-pointer" onclick="openLightbox();toSlide(6)" class="hover-shadow preview">
+                            <img id="myImg" alt="" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/laura.png">
+                            <div id="myModal" class="modal">
+                              <span class="close">&times;</span>
+                              <img class="modal-content" id="img01">
+                              <div class="bio p-2">
+                                 <h2 class="text-left text-lg mt-2 mb-1">Laura Prados-Bacó</h2>
+                                <hr class="mb-1">
+                                <h5 class="text-left text-sm">UPDATE</h5>
+                                <h5 class="text-left text-sm">UPDATE</h5>
+                                <hr class="mt-1">
+                                <p class="text-xs text-left mt-3">UPDATE UPDATE UPDATE</p>
+                              </div>
+                            </div>
+                            <div class="flex-grow">
+                              <h2 class="text-primary title-font font-medium">Laura Prados-Bacó</h2>
+                              <p class="text-third">Marketing</p>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+
+                       <!-- This is your lightbox, it is contained in a modal. Here you provide all the images,
+                           controls, and another set of preview images as the dots. Dots show your user which
+                           image is currently active. Note that you use entities (e.g. &times;), more info on
+                           them at the bottom. -->
+
+
+                     <!--==============================================================================
+                     ==================THE CODE BELOW IS THE IMAGE WHEN IT"S CLICKED=====================
+                     ====================================================================================
+                     =================================================================================== -->
+
+                       <div id="Lightbox" class="modal">
+                        <span class="close pointer" onclick="closeLightbox()">&times;</span>
+                        <div class="modal-content">
+
+                         <!--=======================EAGLE's Section =====================
+                        ================================================================-->
+                          <div class="slide">
+                            <section class="biotext">
+                              <h1 class="text-left text-xl font-medium mb-1 -mt-2">Eagle Wu</h1>
+                              <hr>
+                              <h5 class="text-left text-sm">Enterpreneurship @Babson College</h5>
+                              <h5 class="text-left text-sm">Winner, Money 20/20 Hackathon</h5>
+                              <hr class="mb-3">
+                              <div class="hidden-text-team overflow-x-auto">
+                                  <p class="text-left  text-sm ">
+                                    Eagle Wu grew up in Philadelphia before going to Babson College to study
+                                    entrepreneurship. He founded VINCI while a student and is the CEO of the company. He is
+                                    focused on growing VINCI's tools and team to help solve training problems across various
+                                    industries. Eagle's passions include video games and space.
+
+                                  </p>
+                            </div>
+                            </section>
+                              <img src="../public/img/eagle.png" class="image-slide" alt="Eagle Wu" />
+                          </div>
+
+                          <!--======================Tim's Section =====================
+                        ================================================================-->
+                          <div class="slide">
+                            <section class="biotext">
+                              <h1 class="text-left text-xl font-medium mb-1 -mt-2">Tim Clancy</h1>
+                              <hr>
+                              <h5 class="text-left text-sm">Computer Science, MS @UPenn</h5>
+                              <h5 class="text-left text-sm">Lead Developer, Salad Blockchain</h5>
+                              <hr class="mb-3">
+                              <div class="hidden-text-team overflow-x-auto">
+                                  <p class="text-left  text-sm ">
+                                    Tim Clancy is a native of southern Massachusetts currently living in Ithaca, New York.
+                                    In 2018 he received his BSE and MSE in computer science from the University of Pennsylvania
+                                    after accelerating a five year submatriculation program to completion in four years. He is the
+                                    co-founder and current CTO of VINCI, where he oversees engineering efforts directed towards
+                                    improving modern virtual reality training solutions. Tim is also passionate about blockchain
+                                    technology, gaming in general, and gardening
+
+                                  </p>
+                            </div>
+                            </section>
+                              <img src="../public/img/tim.png" class="image-slide" alt="Tim Clancy" />
+                          </div>
+
+                          <!--======================Liam's Section =====================
+                        ================================================================-->
+                          <div class="slide">
+                              <section class="biotext">
+                                <h1 class="text-left text-xl font-medium mb-1 -mt-2">Liam Clancy</h1>
+                                <hr>
+                                <h5 class="text-left text-sm">Computer Science @Boston University</h5>
+                                <h5 class="text-left text-sm"></h5>
+                                <hr class="bio-hr mb-3">
+                                <div class="hidden-text-team overflow-x-auto">
+                                    <p class="text-left  text-sm ">
+                                      Liam Clancy was born in Providence, Rhode Island, and received his education at Boston
+                                      University for Computer Science. He is a developer for VINCI, where his primary focus is on
+                                      the CODEX platform and applications interfacing with the simulation, such as the Instructor
+                                      Monitoring Station. In his spare time, Liam works on a farm, enjoys spending time with his
+                                      friends, and hangs out with his bird.
+                                    </p>
+                              </div>
+                              </section>
+                                <img src="../public/img/liam.png" class="image-slide" alt="Tim Clancy" />
+                          </div>
+
+
+                          <!--======================Matt's Section =====================
+                        ================================================================-->
+                          <div class="slide">
+                            <section class="biotext">
+                              <h1 class="text-left text-xl font-medium mb-1 -mt-2">Matthew Oh</h1>
+                              <hr>
+                              <h5 class="text-left text-sm">Economics @Tuft University</h5>
+                              <h5 class="text-left text-sm"></h5>
+                              <hr class="mb-3">
+                              <div class="hidden-text-team overflow-x-auto">
+                                  <p class="text-left  text-sm ">
+                                    Matthew Oh is the Business Development Analyst at Vinci. Originally from the Bay
+                                    Area, he is a student at Tufts University, majoring in Economics and minoring in Finance &
+                                    English. At Vinci, Matthew is responsible for research and outreach — primarily in the private
+                                    sector. In his free time, Matthew enjoys watching sports and cooking.
+                                  </p>
+                            </div>
+                            </section>
+                              <img src="../public/img/matt.png" class="image-slide" alt="Tim Clancy" />
+                          </div>
+
+                          <!--======================Sloan's Section =====================
+                        ================================================================-->
+                          <div class="slide">
+                            <section class="biotext">
+                              <h1 class="text-left text-xl font-medium mb-1 -mt-2">Sloan Poelman</h1>
+                              <hr>
+                              <h5 class="text-left text-sm">Graduate @BYU</h5>
+                              <h5 class="text-left text-sm">2x BYU Animation Award Winner</h5>
+                              <hr class="mb-3">
+                              <div class="hidden-text-team overflow-x-auto">
+                                  <p class="text-left  text-sm ">
+                                   Sloan Poelman is a passionate multimedia artist strong in stylized and realistic
+                                   rendering styles. Originally from Orem, Utah, he worked with a team at Brigham Young
+                                   University to compete on a national level with two video games, and received BYU Design
+                                   Department Talent awards for two consecutive years for innovative work in animation.
+                                   Currently, he is a 3D modeler at Vinci VR, where he ensures that the 3D models created are
+                                   accurate to their real world counterparts. In his free time, Sloan enjoys listening to audio books,
+                                   exercising, and spending time with his family.
+                                  </p>
+                            </div>
+                            </section>
+                              <img src="../public/img/img1.png" class="image-slide" alt="Tim Clancy" />
+                          </div>
+
+                          <!--======================Laura's Section =====================
+                        ================================================================-->
+                          <div class="slide">
+                            <section class="biotext">
+                              <h1 class="text-left text-xl font-medium mb-1 -mt-2">Laura Prados-Bacó</h1>
+                              <hr>
+                              <h5 class="text-left text-sm  mb-1">Studying @Babson College</h5>
+                              <h5 class="text-left text-sm  mb-1"></h5>
+                              <hr class="mb-3">
+                              <div class="hidden-text-team overflow-x-auto">
+                                  <p class="text-left  text-sm ">
+                                    Laura Prados-Bacó was born and raised in San Juan, Puerto Rico. At 18 years old, she left
+                                    Puerto Rico to pursue an education at Babson College. She currently holds the Marketing
+                                    position in the Business Development division at Vinci, where she aids with the creation of
+                                    marketing materials, brand management, and PR-related tasks. When not working, Laura likes
+                                    to read, skateboard, and spend time with her friends.
+                                  </p>
+                            </div>
+                            </section>
+                              <img src="../public/img/laura.png" class="image-slide" alt="Tim Clancy" />
+                          </div>
+
+                          <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+                          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+                          <div class="dots">
+                            <div class="col">
+                              <img src="../public/img/eagle.png" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Eagle" />
+                            </div>
+                            <div class="col">
+                              <img src="../public/img/tim.png" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Tim" />
+                            </div>
+                            <div class="col">
+                              <img src="../public/img/liam.png" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="Liam" />
+                            </div>
+                            <div class="col">
+                              <img src="../public/img/matt.png" class="modal-preview hover-shadow" onclick="toSlide(4)" alt="Matt" />
+                            </div>
+                            <div class="col">
+                              <img src="../public/img/img1.png" class="modal-preview hover-shadow" onclick="toSlide(5)" alt="" />
+                            </div>
+                            <div class="col">
+                              <img src="../public/img/laura.png" class="modal-preview hover-shadow" onclick="toSlide(6)" alt="laura" />
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+                     </section>
+
+
+                     <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+
+                   </div>
+                 </div>
+               </section>
+           </section>
+
+           <section class="bg-secondary panel">
+              <footer class="bg-secondary bg-bottom bg-cover text-primary body-font  p-4 md:mt-24 lg:mt-24" style="background-image: url('../public/img/contactbckgrnd.png')">
+                <h1 class ="text-primary text-center sm:text-4xl text-3xl font-sans">Want to Learn More About VR Training?</h1>
+                <div class="flex flex-col justify-center mt-24">
+                    <a class="flex flex-col justify-center" href="/blogs">
+                      <button class="w-1/5 mx-auto text-white border-solid border-2 py-2 px-6 focus:outline-none hover:bg-red-600 text-lg">Check Out Our Blogs</button>
+                    </a>
+                    <p class="mx-auto text-Center text-2xl text-primary text-semibold">-or-</p>
+                    <a class="flex flex-col justify-center" href="/contact">
+                      <button class=" w-1/5 mx-auto text-white border-sloid border-2 py-2 px-6 focus:outline-none hover:bg-red-600 text-lg">Reach Out To Us</button>
+                    </a>
+                </div>
+                <div class=" container px-5 py-32 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+                  <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+                    <img class="-mt-2" src="../public/img/vinci-logo.png" alt="">
+                  </div>
+                  <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                      <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"></h2>
+                      <nav class="list-none mb-10 -mt-24">
+                        <li>
+                          <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href="/about">ABOUT</a>
+                        </li>
+                        <li>
+                          <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href="/services">SOLUTIONS</a>
+                        </li>
+                        <li>
+                          <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href="/partners">PARTNERS</a>
+                        </li>
+                        <li>
+                          <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href="/careers">CAREERS</a>
+                        </li>
+                        <li>
+                          <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href="/blogs">BLOGS</a>
+                        </li>
+                        <li>
+                          <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href=/contact"">CONTACT</a>
+                        </li>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+           </section>
+      </div> <!-- end of desktop main container -->
+
+
+      <!-- beginning of main mobile view container -->
+      <section class="mobile-main">
+        <section class="panel first">
+          <h1>Hi mobile view!</h1>
+        </section>
+        <section class="panel second">
+          <h1>Panel 2</h1>
         </section>
 
-    </section>
+      </section>   <!-- end of mobile container -->
+
+     </section> <!-- end of panel container -->
+
+ <!-- ===============
+     SCRIPTS
+ =================== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
     <script src ="../public/js/about.js"></script>
@@ -494,87 +513,3 @@
 
 
 </html>
-
-
-<!-- <div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg">
-  <img id="myImg" alt="" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/eagle.png">
-  <div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div class="bio p-2">
-       <h2 class="text-left text-lg mt-2 mb-1">Eagle Wu</h2>
-      <hr class="mb-1">
-      <h5 class="text-left text-sm">Enterpreneurship @Babson College</h5>
-      <h5 class="text-left text-sm">Winner, Money 20/20 Global Hackathon</h5>
-      <hr class="mt-1">
-      <p class="text-xs text-left mt-3">
-          Modern virtual reality headset displays are based on technology developed for smartphones including: gyroscopes and motion sensors for tracking head, body, and hand positions; small HD screens for stereoscopic displays; and small, lightweight and fast computer processors.
-      </p>
-    </div>
-  </div>
-  <div class="flex-grow">
-    <h2 class="text-primary title-font font-medium">Eagle Wu</h2>
-    <p class="text-third">Business Dev</p>
-  </div>
-</div>
-</div>
-
-<div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-<div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg">
-  <img id="myImg" alt="" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/tim.png">
-  <div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div class="bio p-2">
-      <h2 class="text-left text-lg mt-2 mb-2">Tim Clancy</h2>
-      <hr>
-      <h5 class="text-left text-sm">Blah Blah Balah </h5>
-      <h5 class="text-left text-sm">1234567789</h5>
-      <hr>
-      <p class="text-xs text-left mt-2">
-          Modern virtual reality headset displays are based on technology developed for smartphones including: gyroscopes and motion sensors for tracking head, body, and hand positions; small HD screens for stereoscopic displays; and small, lightweight and fast computer processors.
-      </p>
-    </div>
-  </div>
-  <div class="flex-grow">
-    <h2 class="text-primary title-font font-medium">Tim Clancy</h2>
-    <p class="text-third">Engineer</p>
-  </div>
-</div>
-</div> -->
-<!-- <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-<div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg">
-  <img id="myImg" alt="team" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/liam.png">
-  <div class="flex-grow">
-    <h2 class="text-primary title-font font-medium">john doe</h2>
-    <p class="text-third">blank</p>
-  </div>
-</div>
-</div> -->
-<!-- <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-<div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg">
-  <img id="myImg" alt="team" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/matt.png">
-  <div class="flex-grow">
-    <h2 class="text-primary title-font font-medium">John Doe</h2>
-    <p class="text-third">blank</p>
-  </div>
-</div>
-</div> -->
-<!-- <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-<div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg">
-  <img id="myImg" alt="team" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/img1.png">
-  <div class="flex-grow">
-    <h2 class="text-primary title-font font-medium">john doe</h2>
-    <p class="text-third">blank</p>
-  </div>
-</div>
-</div> -->
-<!-- <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-<div class="modalBlock h-full flex items-center border-gray-200 border p-4 rounded-lg">
-  <img id="myImg" alt="team" class="myImages w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="../public/img/dawson.png">
-  <div class="flex-grow">
-    <h2 class="text-primary title-font font-medium">john doe</h2>
-    <p class="text-third">blank</p>
-  </div>
-</div>
-</div> -->

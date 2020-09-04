@@ -1,0 +1,22 @@
+.mobile-main {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .main-wrapper {
+    display: none !important;
+  }
+
+  .mobile-main{
+    display: block;
+  }
+
+
+  .first {
+    background-color: red;
+  }
+
+  .second {
+    background-color: green;
+  }
+}
