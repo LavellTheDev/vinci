@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "json-loader": "^0.5.4",
+    "postcss-preset-env": "^6.7.0",
     "webpack": "^2.6.1"
   }
 }
