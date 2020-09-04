@@ -312,15 +312,306 @@
         </div>
 
 
-      <!-- beginning of main mobile view container -->
+      <!-- ====================================================================
+      =========================================================================
+      ==================beginning of main mobile view container ===============
+    =================================================================================
+  ==================================================================================-->
 
       <section class="mobile-main">
-        <section class="panel first">
-          <h1>Hi mobile view!</h1>
+        <section class="hero-section panel text-center h-screen w-full">
+          <!--==================
+           NAV SECTION
+          ==================-->
+
+          <header class="text-gray-700 body-font">
+              <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
+                <a href="/" class="flex items-center mb-4 md:mb-0  z-10">
+                  <img class="w-1/4 -mt-2" src="../public/img/vinci-logo.png" alt="">
+                </a>
+                <nav class="md:ml-auto flex flex-wrap items-center z-10 text-base justify-center text-primary text-lg font-semibold">
+                  <a href="/about" class="mr-5 hover:text-gray-900">About</a>
+                  <a href="/services" class="mr-5 hover:text-gray-900">Solutions</a>
+                  <a href="/partners" class="mr-5 hover:text-gray-900">Partners</a>
+                  <a href="/careers" class="mr-5 hover:text-gray-900">Careers</a>
+                  <a href="/blogs" class="mr-5 hover:text-gray-900">Blogs</a>
+                  <a href="/contact" class="mr-5 hover:text-gray-900">Contact</a>
+                </nav>
+              </div>
+          </header>
+          <hr class="-mt-4">
+
+      <!--==================
+       HERO SECTION
+      ==================-->
+        <style media="screen">
+          h1, h2, h3, h4, h5, h6 {
+            font-family: "Montserrat", sans-serif !important;
+          }
+        </style>
+
+          <div class="overlay w-full h-screen" style="position:absolute; top:0; left:0;  min-width:100%; min-height:100vh; background-color:rgba(0,0,0,0.3); z-index:0;"></div>
+          <video class="bg-video object-cover overflow-hidden" autoplay muted loop style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; z-index:-1;">
+              <source src="../public/video/background2.mp4" type="video/mp4">
+          </video>
+          <section class="font-sans hero-text w-full p-4 absolute z-1 sm:mt-32 md:mt-40 ">
+            <h3 class="font-sans text-xl mt-40"> PREPARE FOR THE REAL WORLD
+              <hr class="mt-4 w-3/4 mx-auto">
+            </h3>
+            <br>
+             <h1 class="font-sans font-black -mb-20 -mt-6 text-2xl "> WITH A WORLD OF YOUR OWN
+              <hr class=" w-3/4 mx-auto mb-10">
+            </h1>
+           <h3 class="font-sans pt-12 sm:my-8 text-xl mb-24">Create, Analyze, and Train in <b class="bold">Virtual Reality</b></h3>
+    ​
+           <a id="learnMoreIntro" class="btn uppercase border p-4 hover:bg-gray-100 hover:opacity-3 hover:text-gray-600 text-sm" href="/services">Learn about our services</a>
+    ​
+    ​       <p class=" down-arrow text-4xl mt-40">⌄</p>
+          </section>
+
         </section>
-        <section class="panel second">
-          <h1>Panel 2</h1>
+
+
+      <!--==================
+       INTRO SECTION
+      ==================-->
+      <section class="panel bg-secondary">
+          <section class="lg:flex mb-4 ">
+             <div class="w-3/5 ml-20 m-2 mt-16 p-6 pt-14">
+                 <h2 class ="text-primary font-semibold text-3xl text-left tracking-wider font-sans">
+                     Codex: A New Way to Train in VR
+                 </h2>
+                 <hr class="mt-4">
+                 <p class="text-primary text-left mt-6 tracking-widest leading-8">
+                 Effective training requires expensive equipment, generates potential safety hazards, and elongates training time.
+                  With Codex, teams can now improve their training by creating, training in and analyzing immersive VR simulations.
+                  </p>
+
+                  <a id="learnMore" class="btn uppercase border p-4 hover:bg-red-700 hover:opacity-3 hover:text-gray-600 sm:text-sm lg:text-sm sm:ml-1 sm:-my-4 sm:block md:ml-1 md:mt-10 lg:ml-1 lg:mt-32"  style="width:40%;"  href="/services">
+                    <p class="text-center">LEARN MORE ABOUT CODEX </p>
+                  </a>
+             </div>
+             <div class="w-2/5 p-12">
+               <aside class="vr-img w-4/5 md:float-left lg:mt-20 -ml-10">
+                 <img src="../public/img/vr-goggles.png" alt="vr goggles" class="vr-goggles">
+               </aside>
+            </div>
+           </section>
+     </section>
+
+
+     <section class="panel">
+
+       <style media="screen">
+       .card {
+         padding:2rem;
+         width:33%;
+         text-align: center;
+       }
+       .card a {
+         text-align: center;
+       }
+       .card:hover {
+         background-color: #811;
+       }
+       .active {
+         transition-timing-function: ease-in;
+         transition: 0.2s;
+         transform: scale(1.1);
+         background-color: #6C6C6C;
+         filter: drop-shadow(0 0 1.75rem white);
+         z-index: 2;
+         width:33%;
+         text-align: center;
+       }
+       .active img {
+         margin-top: 3rem;
+       }
+
+       </style>
+
+       <section class="partnersBlock h-screen w-full mb-64">
+
+
+         <section class="text-gray-700 body-font bg-secondary">
+           <div class="container px-5 mx-auto">
+             <h2 class="mt-16 text-center title-font font-sans text-3xl text-primary tracking-wider font-semibold">Why Codex?</h2>
+             <div class="md:flex flex-wrap -m-4 lg:mt-16">
+               <div id="card" class="card p-4 md:w-1/3  hover:bg-red-800">
+                 <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
+                   <img class="lg:h-40 md:h-40 sm:h-40 w-full object-contain object-center p-4" src="../public/img/turbine.png" alt="blog">
+                   <div class="p-6">
+                     <h1 class="tracking-widest text-center text-2xl title-font font-semibold text-primary mb-6 uppercase"> Personalize Training</h1>
+                     <a id="clickHereLeft" class="text-lg text-primary underline hover:bg-gray-100 hover:opacity-3 hover:text-gray-600" href="/partners">click here</a>
+                   </div>
+                 </div>
+               </div>
+               <div id="card" class="card p-4 md:w-1/3 hover:bg-red-800">
+                 <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
+                   <img class="lg:h-40 md:h-40 sm:h-40 w-full object-contain object-center p-4" src="../public/img/jet.png" alt="blog">
+                   <div class="p-6">
+                     <h1 class="tracking-widest text-center text-2xl title-font font-semibold text-primary mb-4 uppercase">Built for VR</h1>
+                     <p class="text-sm text-primary text-center font-light mb-2 tracking-wider">VR is cheaper, safer, yet as realistic as real equipment.</p>
+                     <a id="whyCodex" class="text-lg text-primary underline hover:bg-gray-100 hover:opacity-3 hover:text-gray-600" href="/partners">See why Codex is better.</a>
+                   </div>
+                 </div>
+               </div>
+
+               <div id="card" class="card p-4 md:w-1/3 hover:bg-red-800">
+                 <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
+                   <img class="lg:h-40 md:h-40 sm:h-40 w-full object-contain object-center p-4" src="../public/img/soldier.png" alt="blog">
+                   <div class="p-6">
+                     <h1 class="tracking-widest text-center text-2xl title-font font-semibold text-primary mb-6 uppercase">Scalable & <br> Relevant</h1>
+                     <a id="clickHereRight" class="text-lg text-primary underline hover:bg-gray-100 hover:opacity-3 hover:text-gray-600" href="/partners">click here</a>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </section>
+       </section>
+     </section>
+
+
+      <section class="panel">
+
+        <section class="partnersBlock h-screen w-full mb-64">
+
+
+          <section class="text-gray-700 body-font bg-secondary">
+            <div class="container px-5 mx-auto">
+              <h2 class="mt-16 text-center title-font font-sans text-3xl text-primary tracking-wider font-semibold uppercase">Partners</h2>
+              <div class="md:flex flex-wrap -m-4 lg:mt-16">
+                <div id="card" class="card p-4 md:w-1/3  hover:bg-red-800">
+                  <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
+                    <img class="lg:h-40 md:h-40 sm:h-40 w-full object-contain object-center p-4" src="../public/img/turbine.png" alt="blog">
+                    <div class="p-6">
+                      <h1 class="tracking-widest text-center text-2xl title-font font-semibold text-primary mb-6 uppercase">Wind Turbines</h1>
+                      <a id="clickHere" class="text-lg text-primary underline hover:bg-gray-100 hover:opacity-3 hover:text-gray-600" href="/partners">click here</a>
+                    </div>
+                  </div>
+                </div>
+                <div id="card" class="card p-4 md:w-1/3 hover:bg-red-800">
+                  <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
+                    <img class="lg:h-40 md:h-40 sm:h-40 w-full object-contain object-center p-4" src="../public/img/jet.png" alt="blog">
+                    <div class="p-6">
+                      <h1 class="tracking-widest text-center text-2xl title-font font-semibold text-primary mb-6 uppercase">AIR CRAFT MAINTENANCE</h1>
+                      <a id="whyCodex" class="text-lg text-primary underline hover:bg-gray-100 hover:opacity-3 hover:text-gray-600" href="/partners">Explore how our partners are using this.</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="card" class="card p-4 md:w-1/3 hover:bg-red-800">
+                  <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
+                    <img class="lg:h-40 md:h-40 sm:h-40 w-full object-contain object-center p-4" src="../public/img/soldier.png" alt="blog">
+                    <div class="p-6">
+                      <h1 class="tracking-widest text-center text-2xl title-font font-semibold text-primary mb-6 uppercase">Solider Training</h1>
+                      <a id="clickHere" class="text-lg text-primary underline hover:bg-gray-100 hover:opacity-3 hover:text-gray-600" href="/partners">click here</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
+      </section>
+
+
+      <section class="panel">
+        <!--==================
+         SPOTLIGHT SECTION
+        ==================-->
+
+        <section class="panel spotlight h-screen w-full">
+          <h1 class="text-center text-3xl mt-32 uppercase font-sans font-black">Spotlight</h1>
+          <section class="spot-container flex justify-center p-12">
+            <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSheppardAirForceBase%2Fvideos%2F558267695076414%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
+
+            <iframe width="860" height="615" src="https://www.youtube-nocookie.com/embed/NloJsABn8qM?vq=hd720" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen="true" controls="0"></iframe>
+
+
+          </section>
+        </section>
+      </section>
+
+
+
+      <!--==================
+       FOOTER/CONTACT SECTION
+      ==================-->
+      <section class="panel">
+
+        <section class="bg-secondary panel">
+           <footer class="bg-secondary bg-bottom bg-cover text-primary body-font mt-24 p-4" style="background-image: url('../public/img/contactbckgrnd.png')">
+             <h1 class ="text-primary text-center sm:text-4xl text-3xl font-sans">Want to Learn More About VR Training?</h1>
+             <div class="flex flex-col justify-center mt-24">
+                <a class="flex flex-col justify-center" href="/blogs">
+                  <button class="w-1/5 mx-auto text-white border-solid border-2 py-2 px-6 focus:outline-none hover:bg-red-600 text-lg">Check Out Our Blogs</button>
+                </a>
+                <p class="mx-auto text-Center text-2xl text-primary text-semibold">-or-</p>
+                <a class="flex flex-col justify-center" href="/contact">
+                <button class=" w-1/5 mx-auto text-white border-sloid border-2 py-2 px-6 focus:outline-none hover:bg-red-600 text-lg">Reach Out To Us</button>
+                </a>
+             </div>
+             <div class=" container px-5 py-32 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+               <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+                 <img class="-mt-2" src="../public/img/vinci-logo.png" alt="">
+               </div>
+               <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+                 <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                   <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"></h2>
+                   <nav class="list-none mb-10 -mt-24">
+                     <li>
+                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href="/about">ABOUT</a>
+                     </li>
+                     <li>
+                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href="/services">SOLUTIONS</a>
+                     </li>
+                     <li>
+                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href="/partners">PARTNERS</a>
+                     </li>
+                     <li>
+                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer">CAREERS</a>
+                     </li>
+                     <li>
+                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href="/blogs">BLOGS</a>
+                     </li>
+                     <li>
+                       <a class="text-primary-600 hover:text-gray-800 cursor-pointer" href="/contact">CONTACT</a>
+                     </li>
+                   </nav>
+                 </div>
+               </div>
+             </div>
+             <div class="bg-gray-200">
+               <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                 <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 VINCI-VR —
+                   <a href="" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@tresstudios</a>
+                 </p>
+                 <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                   <a class="text-gray-500">
+                     <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                       <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                     </svg>
+                   </a>
+                   <a class="ml-3 text-gray-500">
+                     <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                       <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                     </svg>
+                   </a>
+                   <a class="ml-3 text-gray-500">
+                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                       <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                       <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                     </svg>
+                   </a>
+                 </span>
+               </div>
+             </div>
+           </footer>
+        </section>
+      </section>
+
       </section>   <!-- end of mobile container -->
 
      </section> <!-- end of panel container -->
