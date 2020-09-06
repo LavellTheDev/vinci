@@ -97,3 +97,8 @@ right: 5px;
   background: -moz-linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
   background: linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
 }
+
+img.vr-googles{
+  position: absolute;
+  top:100px;
+}
