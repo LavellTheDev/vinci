@@ -158,7 +158,7 @@
 
 <!--============== Partners Section =======================-->
       <section class="panel">
-        <section class="text-gray-700 body-font bg-secondary">
+        <section class="text-gray-700 body-font bg-secondary object-center">
           <div class="container px-5 mx-auto">
             <h2 class="mt-16 text-center title-font font-sans text-4xl font-medium text-primary tracking-wider uppercase">Partners</h2>
             <div class="carousel js-flickity mt-18">
@@ -168,7 +168,7 @@
                 <a href="/partners" class="partner-link text-2xl p-4 text-primary hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Click here to learn more</a>
               </div>
 
-              <div class="carousel-cell border-2 border-gray-200 rounded-lg overflow-hidden m-32">
+              <div class="carousel-cell border-2 border-gray-200 rounded-lg overflow-hidden m-32 is-selected">
                 <h2 class="img-caption text-2xl p-4 text-primary">Aircraft Maintenance</h2>
                 <img class="w-full h-full" src="../public/img/cockpit.PNG" alt="VR Cockpit" />
                 <a href="/partners" class="partner-link text-2xl p-4 text-primary hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Click here to learn more</a>
@@ -185,6 +185,11 @@
 
 
         <style media="screen">
+
+        .flickity-viewport {
+          overflow: visible;
+        }
+
         .img-caption {
           position: absolute;
           /* height: 20px; */
@@ -206,9 +211,14 @@
           background-color: white;
           color:
         }
+/*
+        .flickity-button-icon {
+          position: absolute;
+          top: 426% !important;
+        } */
 
         .carousel-cell {
-          width: 80%;
+          width: 45% !important;
           height: 400px;
           /* flex-box, center image in cell */
           display: -webkit-box;
@@ -228,8 +238,8 @@
           max-height: 100%; */
           /* dim unselected */
           opacity: 0.7;
-          -webkit-transform: scale(0.85);
-                  transform: scale(0.85);
+          /* -webkit-transform: scale(0.85);
+                  transform: scale(0.85); */
           /* -webkit-filter: blur(5px);
                   filter: blur(5px); */
           -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
@@ -263,6 +273,7 @@
           height: 60px;
           background: transparent;
           opacity: 0.6;
+          top: 62%;
         }
         .flickity-prev-next-button:hover {
           background: transparent;
