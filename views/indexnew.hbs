@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../public/css/output-styles.css">
     <link rel="stylesheet" href="../public/css/panels.css">
     <link rel="stylesheet" href="../public/css/mobile.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>Vinci VR</title>
   </head>
   <body class="text-primary bg-secondary font-serif">
@@ -157,13 +158,143 @@
 
 <!--============== Partners Section =======================-->
       <section class="panel">
-        <section class="partnersBlock h-screen w-full mb-64">
+        <section class="text-gray-700 body-font bg-secondary">
+          <div class="container px-5 mx-auto">
+            <h2 class="mt-16 text-center title-font font-sans text-4xl font-medium text-primary tracking-wider uppercase">Partners</h2>
+            <div class="carousel js-flickity mt-18">
+              <div class="carousel-cell border-2 border-gray-200 rounded-lg overflow-hidden m-32">
+                <h2 class="img-caption text-2xl p-4 text-primary">Wind Turbines</h2>
+                <img class="w-full h-full" src="../public/img/wind-turbine.jpg" alt="Wind Turbines" />
+                <a href="/partners" class="partner-link text-2xl p-4 text-primary hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Click here to learn more</a>
+              </div>
+
+              <div class="carousel-cell border-2 border-gray-200 rounded-lg overflow-hidden m-32">
+                <h2 class="img-caption text-2xl p-4 text-primary">Aircraft Maintenance</h2>
+                <img class="w-full h-full" src="../public/img/cockpit.PNG" alt="VR Cockpit" />
+                <a href="/partners" class="partner-link text-2xl p-4 text-primary hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Click here to learn more</a>
+              </div>
+
+              <div class="carousel-cell border-2 border-gray-200 rounded-lg overflow-hidden m-32">
+                <span class="img-caption text-2xl p-4 text-primary">Soldier Training</span>
+                <img class="w-full h-full z-0" src="../public/img/soldierTraining.JPG" alt="Soldier Training" />
+                <a href="/partners" class="partner-link text-2xl p-4 text-primary hover:bg-gray-100 hover:opacity-3 hover:text-gray-600">Click here to learn more</a>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+        <style media="screen">
+        .img-caption {
+          position: absolute;
+          /* height: 20px; */
+          z-index: 100 !important;
+          /* margin-left: 0rem; */
+          display: block !important;
+          background-color: rgba(0,0,0, 0.5);
+        }
+
+        .partner-link {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin-top: 43%;
+            border: 2px solid white;
+        }
+
+        .partner-link:hover {
+          background-color: white;
+          color:
+        }
+
+        .carousel-cell {
+          width: 80%;
+          height: 400px;
+          /* flex-box, center image in cell */
+          display: -webkit-box;
+          /* display: -webkit-flex;
+          display:         flex; */
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+                  justify-content: center;
+          -webkit-align-items: center;
+                  align-items: center;
+        }
+
+        .carousel-cell img {
+          display: block;
+          z-index: -10 !important;
+          /* max-width: 100%;
+          max-height: 100%; */
+          /* dim unselected */
+          opacity: 0.7;
+          -webkit-transform: scale(0.85);
+                  transform: scale(0.85);
+          /* -webkit-filter: blur(5px);
+                  filter: blur(5px); */
+          -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+                  transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+        }
+
+        /* brighten selected image */
+        .carousel-cell.is-selected img {
+          opacity: 1;
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-filter: none;
+                  filter: none;
+        }
+
+        @media screen and ( min-width: 768px ) {
+          .carousel-cell {
+            height: 400px;
+          }
+        }
+
+        @media screen and ( min-width: 960px ) {
+          .carousel-cell {
+            width: 60%;
+          }
+        }
+
+        /* buttons, no circle */
+        .flickity-prev-next-button {
+          width: 60px;
+          height: 60px;
+          background: transparent;
+          opacity: 0.6;
+        }
+        .flickity-prev-next-button:hover {
+          background: transparent;
+          opacity: 1;
+        }
+        /* arrow color */
+        .flickity-prev-next-button .arrow {
+          fill: white;
+        }
+        .flickity-prev-next-button.no-svg {
+          color: white;
+        }
+        /* closer to edge */
+        .flickity-prev-next-button.previous { left: 0; }
+        .flickity-prev-next-button.next { right: 0; }
+        /* hide disabled button */
+        .flickity-prev-next-button:disabled {
+          display: none;
+        }
+        </style>
+
+
+
+
+
+        <!-- <section class="partnersBlock h-screen w-full mb-64">
           <section class="text-gray-700 body-font bg-secondary">
             <div class="container px-5 mx-auto">
               <h2 class="mt-16 text-center title-font font-sans text-4xl font-medium text-primary tracking-wider uppercase">Partners</h2>
               <div class="mt-2 md:flex lg:flex-wrap lg:mt-16">
-                <div id="" class=" p-12 hover:bg-red-800">
-                  <div class="border-2 border-gray-200 rounded-lg overflow-hidden">
+                <div id="card" class="card p-4 md:w-1/3 hover:bg-red-800">
+                  <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
                     <img class="sm:w-auto lg:h-40 md:h-40 sm:h-40 w-full object-contain object-center p-4" src="../public/img/turbine.png" alt="blog">
                     <div class="p-6">
                       <h1 class="tracking-widest text-center text-2xl title-font font-semibold text-primary mb-6 uppercase">Wind Turbines</h1>
@@ -193,7 +324,7 @@
               </div>
             </div>
           </section>
-        </section>
+        </section> -->
       </section>
 
       <!--==================  SPOTLIGHT SECTION ==================-->
@@ -436,45 +567,153 @@
          </section>
 
 
-      <section class="panel">
-        <section class="overflow-x-auto partnersBlock h-screen w-full mb-64">
-          <section class="text-gray-700 body-font bg-secondary">
-            <div class="container px-5 mx-auto">
-              <h2 class="mt-16 text-center title-font font-sans text-3xl text-primary tracking-wider font-medium uppercase">Partners</h2>
-              <div class="md:flex flex-wrap -m-4 lg:mt-16">
-                <div id="card" class="card p-4 md:w-1/3  hover:bg-red-800">
-                  <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
-                    <img class="lg:h-40 md:h-40 sm:h-40 w-full object-contain object-center p-4" src="../public/img/turbine.png" alt="blog">
-                    <div class="p-6">
-                      <h1 class="tracking-widest text-center text-2xl title-font font-semibold text-primary mb-6 uppercase">Wind Turbines</h1>
-                      <a id="clickHere" class="text-lg text-primary underline hover:bg-gray-100 hover:opacity-3 hover:text-gray-600" href="/partners">click here</a>
-                    </div>
-                  </div>
-                </div>
-                <div id="card" class="card p-4 md:w-1/3 hover:bg-red-800">
-                  <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
-                    <img class="lg:h-40 md:h-40 sm:h-40 w-full object-contain object-center p-4" src="../public/img/jet.png" alt="blog">
-                    <div class="p-6">
-                      <h1 class="tracking-widest text-center text-2xl title-font font-semibold text-primary mb-6 uppercase">AIR CRAFT MAINTENANCE</h1>
-                      <a id="whyCodex" class="text-lg text-primary underline hover:bg-gray-100 hover:opacity-3 hover:text-gray-600" href="/partners">Explore how our partners are using this.</a>
-                    </div>
-                  </div>
-                </div>
+         <!--============== Partners Section =======================-->
+               <section class="panel">
+                 <section class="text-gray-700 body-font bg-secondary">
+                   <div class="container px-5 mx-auto">
+                     <h2 class="mt-16 text-center title-font font-sans text-4xl font-medium text-primary tracking-wider uppercase">Partners</h2>
+                     <div class="carousel js-flickity mt-18">
+                       <div class="carousel-cell border-2 border-gray-200 rounded-lg overflow-hidden m-32">
+                         <h2 class="img-caption text-2xl p-4 text-primary w-full">Wind Turbines</h2>
+                         <img class="w-full h-full" src="../public/img/wind-turbine.jpg" alt="Wind Turbines" />
+                         <a href="/partners" class="partner-link text-xl p-4 text-primary hover:bg-gray-100 hover:opacity-3 hover:text-gray-600 w-full">Click here to learn more</a>
+                       </div>
 
-                <div id="card" class="card p-4 md:w-1/3 hover:bg-red-800">
-                  <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
-                    <img class="lg:h-40 md:h-40 sm:h-40 w-full object-contain object-center p-4" src="../public/img/soldier.png" alt="blog">
-                    <div class="p-6">
-                      <h1 class="tracking-widest text-center text-2xl title-font font-semibold text-primary mb-6 uppercase">Solider Training</h1>
-                      <a id="clickHere" class="text-lg text-primary underline hover:bg-gray-100 hover:opacity-3 hover:text-gray-600" href="/partners">click here</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </section>
-      </section>
+                       <div class="carousel-cell border-2 border-gray-200 rounded-lg overflow-hidden m-32">
+                         <h2 class="img-caption text-2xl p-4 text-primary w-full">Aircraft Maintenance</h2>
+                         <img class="w-full h-full" src="../public/img/cockpit.PNG" alt="VR Cockpit" />
+                         <a href="/partners" class="partner-link text-xl p-4 text-primary hover:bg-gray-100 hover:opacity-3 hover:text-gray-600 w-full">Click here to learn more</a>
+                       </div>
+
+                       <div class="carousel-cell border-2 border-gray-200 rounded-lg overflow-hidden m-32">
+                         <h2 class="img-caption text-2xl p-4 text-primary w-full">Soldier Training</h2>
+                         <img class="w-full h-full z-0 object-fit" src="../public/img/soldierTraining.JPG" alt="Soldier Training" />
+                         <a href="/partners" class="partner-link text-xl p-4 text-primary hover:bg-gray-100 hover:opacity-3 hover:text-gray-600 w-full">Click here to learn more</a>
+                       </div>
+                   </div>
+                 </div>
+               </section>
+
+
+                 <style media="screen">
+                 .img-caption {
+                   position: absolute;
+                   /* height: 20px; */
+                   z-index: 100 !important;
+                   /* margin-left: 0rem; */
+                   display: block !important;
+                   background-color: rgba(0,0,0, 0.5);
+                 }
+
+                 .flickity-button-icon {
+                   top: 287% !important;
+                 }
+
+                 .flickity-page-dots {
+                   bottom: 80px;
+                 }
+
+                 .flickity-page-dots .dot {
+                   background: red !important;
+                 }
+
+                 .dot .is-selected {
+
+                 }
+
+                 .partner-link {
+                   text-align: center;
+                     position: absolute;
+                     right: 0;
+                     bottom: 0;
+                     margin-top: 43%;
+                     border: 2px solid white;
+                     background-color: white;
+                     color: gray;
+                 }
+
+                 .partner-link:hover {
+                   background-color: white;
+                   color:
+                 }
+
+                 .carousel-cell {
+                   width: 85%;
+                   height: 260px;
+                   /* flex-box, center image in cell */
+                   display: -webkit-box;
+                   /* display: -webkit-flex;
+                   display:         flex; */
+                   -webkit-box-pack: center;
+                   -webkit-justify-content: center;
+                           justify-content: center;
+                   -webkit-align-items: center;
+                           align-items: center;
+                 }
+
+                 .carousel-cell img {
+                   display: block;
+                   z-index: -10 !important;
+                   /* max-width: 100%;
+                   max-height: 100%; */
+                   /* dim unselected */
+                   opacity: 0.7;
+                   -webkit-transform: scale(0.85);
+                           transform: scale(0.85);
+                   /* -webkit-filter: blur(5px);
+                           filter: blur(5px); */
+                   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+                           transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+                 }
+
+                 /* brighten selected image */
+                 .carousel-cell.is-selected img {
+                   opacity: 1;
+                   -webkit-transform: scale(1);
+                           transform: scale(1);
+                   -webkit-filter: none;
+                           filter: none;
+                 }
+
+                 @media screen and ( min-width: 768px ) {
+                   .carousel-cell {
+                     height: 400px;
+                   }
+                 }
+
+                 @media screen and ( min-width: 960px ) {
+                   .carousel-cell {
+                     width: 60%;
+                   }
+                 }
+
+                 /* buttons, no circle */
+                 .flickity-prev-next-button {
+                   width: 60px;
+                   height: 60px;
+                   background: transparent;
+                   opacity: 0.6;
+                 }
+                 .flickity-prev-next-button:hover {
+                   background: transparent;
+                   opacity: 1;
+                 }
+                 /* arrow color */
+                 .flickity-prev-next-button .arrow {
+                   fill: white;
+                 }
+                 .flickity-prev-next-button.no-svg {
+                   color: white;
+                 }
+                 /* closer to edge */
+                 .flickity-prev-next-button.previous { left: 0; }
+                 .flickity-prev-next-button.next { right: 0; }
+                 /* hide disabled button */
+                 .flickity-prev-next-button:disabled {
+                   display: none;
+                 }
+                 </style>
+               </section>
 
 
 
@@ -577,6 +816,7 @@
  =================== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src ="../public/js/indexnew.js"></script>
   </body>
 </html>
