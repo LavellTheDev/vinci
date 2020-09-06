@@ -177,3 +177,7 @@ scrollbar-width: thin;
   padding-right: 1px;
   scrollbar-width: thin;
 }
+
+::-webkit-scrollbar {
+    width: 24px;
+}

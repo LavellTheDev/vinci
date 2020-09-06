@@ -19,7 +19,6 @@
   .second {
     background-color: green;
   }
-}
 
 .imgSize1{
   position: absolute;
@@ -101,4 +100,6 @@ right: 5px;
 img.vr-googles{
   position: absolute;
   top:100px;
+}
+
 }
