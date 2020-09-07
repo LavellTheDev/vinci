@@ -8,6 +8,7 @@ var mongoose = require('mongoose');
 var index = require('./routes/index');
 var auth = require('./routes/auth');
 var users = require('./routes/users');
+let port = process.env.PORT || 3000;
 
 //AWS Cognito Credentials
 var AmazonCognitoIdentity = require('amazon-cognito-identity-js');
