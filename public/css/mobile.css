@@ -69,32 +69,32 @@ right: 5px;
 }
 
 .first{
-  background: -webkit-linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
-  background: -o-linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
-  background: -moz-linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
-  background: linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
+  background: -webkit-linear-gradient(-110deg, #191919 60%, #191919 40%);
+  background: -o-linear-gradient(-110deg, #191919 60%, #191919 40%);
+  background: -moz-linear-gradient(-110deg, #191919 60%, #191919 40%);
+  background: linear-gradient(-110deg, #191919 60%, #191919 40%);
 }
 
 .second{
-  background: -webkit-linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
-  background: -o-linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
-  background: -moz-linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
-  background: linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
+  background: -webkit-linear-gradient(-110deg, #191919 60%, #191919 40%);
+  background: -o-linear-gradient(-110deg, #191919 60%, #191919 40%);
+  background: -moz-linear-gradient(-110deg, #191919 60%, #191919 40%);
+  background: linear-gradient(-110deg, #191919 60%, #191919 40%);
 }
 
 
 .third{
-  background: -webkit-linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
-  background: -o-linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
-  background: -moz-linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
-  background: linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
+  background: -webkit-linear-gradient(-110deg, #191919 60%, #191919 40%);
+  background: -o-linear-gradient(-110deg, #191919 60%, #191919 40%);
+  background: -moz-linear-gradient(-110deg, #191919 60%, #191919 40%);
+  background: linear-gradient(-110deg, #191919 60%, #191919 40%);
 }
 
 .fourth{
-  background: -webkit-linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
-  background: -o-linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
-  background: -moz-linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
-  background: linear-gradient(-110deg, #191919 60%, #ff0000ff 40%);
+  background: -webkit-linear-gradient(-110deg, #191919 60%, #191919 40%);
+  background: -o-linear-gradient(-110deg, #191919 60%, #191919 40%);
+  background: -moz-linear-gradient(-110deg, #191919 60%, #191919 40%);
+  background: linear-gradient(-110deg, #191919 60%, #191919 40%);
 }
 
 img.vr-googles{
