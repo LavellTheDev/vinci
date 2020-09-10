@@ -15,7 +15,7 @@ gsap.to(".panel:not(:last-child)", {
   scrollTrigger: {
     trigger: "#container",
     start: "top top",
-    end: "+=300%",
+    end: "+=2500%",
     scrub: true,
     pin: true
   }
