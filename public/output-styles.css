@@ -24226,7 +24226,7 @@ video {
 
   font-weight: 400;
 
-  src: url('../public/fonts/Montserrat/Montserrat-Regular.ttf');
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
 }
 
 @font-face {
@@ -24234,7 +24234,7 @@ video {
 
   font-weight: 400;
 
-  src: url('../public/fonts/Spectral/Spectral-Regular.ttf');
+  src: url('../fonts/Spectral/Spectral-Regular.ttf');
 }
 
 @media (min-width: 640px) {

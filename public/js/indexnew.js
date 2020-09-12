@@ -2,12 +2,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".panel:not(:last-child)", {
   yPercent: -200,
-  ease: "none",
+  ease: "slow",
   stagger: 0.5,
   scrollTrigger: {
     trigger: "#container",
-    start: "bottom bottom",
-    end: "+=300%",
+    start: "top top",
+    end: "+=200%",
     scrub: true,
     pin: true
   }
