@@ -1,5 +1,5 @@
 .blog_header{
-	margin-top: 17%;
+	margin-top: 5%;
 }
 
 @font-face {
@@ -112,7 +112,7 @@
 	text-align: left;
 	margin-right: 18%;
 	margin-left: 18%;
-	
+
 	font-weight: normal;
 	line-height: 28px;
 	letter-spacing: 0.03em;
@@ -185,10 +185,10 @@
 .more_links li::before {
 	content: "\2022";
 	color: #000000 !important;
-	font-weight: bold; 
-  	display: inline-block; 
+	font-weight: bold;
+  	display: inline-block;
  	width: 1em;
-  	margin-left: -1em; 
+  	margin-left: -1em;
 }
 
 .more_links li{
@@ -215,8 +215,8 @@
 .list li::before {
 	content: "\2022";
 	color: #000000 !important;
-	font-weight: bold; 
-  	display: inline-block; 
+	font-weight: bold;
+  	display: inline-block;
  	width: .9em;
  	font-size: 1.2em;
 }
@@ -309,8 +309,8 @@
 	background-position: center;
 }
 
-@media only screen 
-and (min-device-width : 300px) 
+@media only screen
+and (min-device-width : 300px)
 and (max-device-width : 768px) {
 	.main_paragraph{
 		font-size: 1em;
