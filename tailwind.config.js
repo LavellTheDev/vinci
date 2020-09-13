@@ -24,8 +24,8 @@ module.exports = {
       },
       screen: {
         sm: '320px',
-        lg: '1300x',
-        xl: '1500px',
+        lg: '1400x',
+        xl: '1450px',
       },
       video: {
         maxWidth: false,
