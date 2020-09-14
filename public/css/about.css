@@ -25,7 +25,6 @@ body{
 }
 
 .imgSize1A, .imgSize2A{
-  background: red;
   height: 468px;
   width: 330px;
 }
@@ -156,8 +155,18 @@ body{
   cursor: pointer;
 }
 
+
+ @media only screen and (min-width: 1400px) {
+  .imgSize1A, .imgSize2A{
+    height: 702px;
+    width: 495px;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
   }
+
+
 }
