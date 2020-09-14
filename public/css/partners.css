@@ -53,12 +53,13 @@ body{
 
 .third{
   color: #fff;
-  background: -webkit-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('../img/spotlight.png');
-  background: -o-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('../img/spotlight.png');
-  background: -moz-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('../img/spotlight.png');
-  background: linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('../img/spotlight.png');
+  background: -webkit-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://images.unsplash.com/photo-1539538507524-eab6a4184604?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+  background: -o-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://images.unsplash.com/photo-1539538507524-eab6a4184604?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+  background: -moz-linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://images.unsplash.com/photo-1539538507524-eab6a4184604?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+  background: linear-gradient(-110deg, #191919 60%, rgba(0, 0, 0, 0) 40%), url('https://images.unsplash.com/photo-1539538507524-eab6a4184604?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
   background-size: cover;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
   text-align: right;
 }
 
