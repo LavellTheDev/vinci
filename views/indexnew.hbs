@@ -39,13 +39,21 @@
 
       <!--================== HERO SECTION ==================-->
         <style media="screen">
+          body {
+            width: 100vw !important;
+            overflow-x: hidden;
+          }
           h1, h2, h3, h4, h5, h6 {
             font-family: "Montserrat", sans-serif !important;
+          }
+          #vidPreview {
+            overflow-y: hidden !important;
+            height: 100vh;
           }
         </style>
 
           <div class="overlay w-full h-screen" style="position:absolute; top:0; left:0;  min-width:100%; min-height:100vh; background-color:rgba(0,0,0,0.3); z-index:0;"></div>
-          <video class="bg-video object-cover overflow-hidden" autoplay muted loop style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; z-index:-1;">
+          <video id="vidPreview" class="bg-video object-cover overflow-y-hidden" autoplay muted loop style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; z-index:-1;">
               <source src="../public/video/background2.mp4" type="video/mp4">
           </video>
           <section class="font-sans hero-text w-full p-4 absolute z-1 sm:mt-32 md:mt-40 lg: xl:mt-64 ">
