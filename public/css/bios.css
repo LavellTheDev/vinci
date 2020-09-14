@@ -160,14 +160,15 @@ background-color: #c4c4c4;
 color: #191919;
 opacity: 0.8;
 padding: 2rem;
-width: 55%;
-height: 300px;
-max-height: 400px;
+width: 60%;
+height: 380px;
+/* max-height: 400px; */
 position: absolute;
 z-index: 1;
-margin-top: 20%;
+margin-top: 10%;
 margin-left: 71%;
-scrollbar-width: thin;
+padding-bottom: 2rem;
+scrollbar-width: thin !important;
 }
 
 .hidden-text-team{
