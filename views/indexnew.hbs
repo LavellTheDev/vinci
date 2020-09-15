@@ -166,7 +166,7 @@
 
 <!--============== Partners Section =======================-->
       <section class="panel partnersSection">
-        <section class="text-gray-700 body-font bg-secondary object-center">
+        <section class="text-gray-700 body-font bg-secondary object-center overflow-auto">
           <div class="container px-5 mx-auto xl:mt-32">
             <h2 class="mt-16 text-center title-font font-sans text-4xl font-medium text-primary tracking-wider uppercase">Partners</h2>
             <div class="carousel js-flickity mt-18">
@@ -198,9 +198,9 @@
           overflow-y: hidden;
         }
 
-        .flickity-viewport {
-          overflow: visible;
-        }
+        /* .flickity-viewport {
+          border: 3px solid grey;
+        } */
 
         .flickity-button-icon {
           top: 287% !important;
@@ -746,18 +746,6 @@
                              transform: scale(1);
                      -webkit-filter: none;
                              filter: none;
-                   }
-
-                   @media screen and ( min-width: 768px ) {
-                     .carousel-cell {
-                       height: 400px;
-                     }
-                   }
-
-                   @media screen and ( min-width: 960px ) {
-                     .carousel-cell {
-                       width: 60%;
-                     }
                    }
 
                    /* buttons, no circle */
