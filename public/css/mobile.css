@@ -2,7 +2,7 @@
   display: block;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (min-with: 300px) and (max-width: 640px) {
   .main-wrapper {
     display: none !important;
   }
