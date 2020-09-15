@@ -53,7 +53,7 @@ background-image: url("../img/codexscreenshot.JPG");
   background-image: url("https://images.unsplash.com/photo-1538388149542-5e24932d11a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1500px) {
 
   .imgSize1, .imgSize2, .imgSize3,
   .imgSize4, .imgSize5, .imgSize6{

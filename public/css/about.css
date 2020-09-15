@@ -156,7 +156,7 @@ body{
 }
 
 
- @media only screen and (min-width: 1400px) {
+ @media only screen and (min-width: 1500px) {
   .imgSize1A, .imgSize2A{
     height: 702px;
     width: 495px;
