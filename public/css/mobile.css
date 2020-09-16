@@ -21,7 +21,6 @@
   }
 
 .imgSize1{
-  position: absolute;
   width: 90%;
   height: 180px;
   top: 1690px;
@@ -29,7 +28,6 @@
 }
 
 .imgSize2{
-position: absolute;
 width: 90%;
 height: 180px;
 top: 2510px;
@@ -37,7 +35,7 @@ right: 5px;
 }
 
 .imgSize3{
-  position: absolute;
+
   width: 90%;
   height: 180px;
   top: 3360px;
@@ -45,7 +43,6 @@ right: 5px;
 }
 
 .imgSize4{
-position: absolute;
 width: 90%;
 height: 180px;
 top: 4060px;
@@ -53,7 +50,6 @@ right: 5px;
 }
 
 .imgSize5{
-  position: absolute;
   width: 90%;
   height: 180px;
   top: 4778px;
@@ -61,7 +57,6 @@ right: 5px;
 }
 
 .imgSize6{
-position: absolute;
 width: 90%;
 height: 180px;
 top: 5465px;
