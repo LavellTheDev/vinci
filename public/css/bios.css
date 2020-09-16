@@ -180,5 +180,5 @@ scrollbar-width: thin !important;
 }
 
 ::-webkit-scrollbar {
-    width: 24px;
+  scrollbar-width: thin !important;
 }
