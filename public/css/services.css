@@ -1,5 +1,5 @@
 .hero-section {
-  background-image: url("../img/solutions-hero-img.png");
+  background-image: url("../img/solutions-hero-img(3).png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,7 +53,7 @@ background-image: url("../img/codexscreenshot.JPG");
   background-image: url("https://images.unsplash.com/photo-1538388149542-5e24932d11a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1280px) {
 
   .imgSize1, .imgSize2, .imgSize3,
   .imgSize4, .imgSize5, .imgSize6{
@@ -61,7 +61,7 @@ background-image: url("../img/codexscreenshot.JPG");
     background-size: cover;
     border-radius: 1%;
     height:   20rem;
-    margin-top:  12.5rem;
+    margin-top:  10rem;
     margin-left: 1rem;
     padding-left: 1.5rem;
     width: 45rem;
@@ -78,6 +78,7 @@ background-image: url("../img/codexscreenshot.JPG");
 
   .imgSize3{
     background-image: url("../img/analyticsscreenshot.png");
+      margin-top: ;
   }
 
   .imgSize4{
@@ -91,6 +92,7 @@ background-image: url("../img/codexscreenshot.JPG");
 
   .imgSize6{
     background-image: url("https://images.unsplash.com/photo-1538388149542-5e24932d11a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
+
   }
 
 }

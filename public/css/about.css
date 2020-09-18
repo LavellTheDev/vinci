@@ -155,10 +155,10 @@ body{
 }
 
 
- @media only screen and (min-width: 1500px) {
+ @media only screen and (min-width: 1200px) {
   .imgSize1A, .imgSize2A{
-    height: 702px;
-    width: 495px;
+    height: 405px;
+    width: 298px;
   }
 }
 
