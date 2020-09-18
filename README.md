@@ -48,18 +48,18 @@ An example is provided here for easy reference:
 <br>
   `<summary>Position Title</summary>`
   <br>
-  `<p>More info about the position, etc goes here under the summary tag.</p>`
+  `<p>More info about the position, etc. goes here under the summary tag.</p>`
   <br>
 `</details>`
 
 #### how it looks when you use it (with no CSS):
 <details>
   <summary>Position Title</summary>
-  <p>More info about the position, etc goes here under the summary tag.</p>
+  <p>More info about the position, etc. goes here under the summary tag.</p>
 </details>
 
 ### Deploying to heroku: 
-Dependin on which branch you choose to use, you can push to heroku after adding and commiting your files to the github repo. On the `Deploy` page of heroku, there is an option to deploy using github which is easier than using the terminal. Simply select the branch you want to deploy (in this case it will be `nopanel` or `new`) and then click the deploy button. 
+Depending on which branch you choose to use, you can push to heroku after adding and commiting your files to the github repo. On the `Deploy` page of heroku, there is an option to deploy using github which is easier than using the terminal. Simply select the branch you want to deploy (in this case it will be `nopanel` or `new`) and then click the deploy button. 
 
 ### Rolling back to a different site version:
 You can easily rollback to previous versions of the site by visiting the `Activity` page on heroku and clicking a version to rollback to from the list of prior deploys.
