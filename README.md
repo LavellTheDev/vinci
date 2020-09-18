@@ -5,9 +5,11 @@ vinci from scratch
 `git clone https://github.com/LavellTheDev/vinci.git`
 
 ### To start project:
-cd into project folder
-run `npm start`  or `node ./bin/www` to start project server
-Open `localhost:3000` in a browser window
+cd into project folder.
+
+Run `npm start`  or `node ./bin/www` to start project server.
+
+Open `localhost:3000` in a browser window.
 
 ### Project Versions:
 To use the panel version of the project use the `new` branch. The margins need to be fixed due to the frameset issue. The framework we used for the panels version of the site is called Scroll Trigger. More information on how to use this framework can be found here: https://greensock.com/scrolltrigger/
