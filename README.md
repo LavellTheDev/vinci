@@ -1,21 +1,25 @@
 # vinci
 vinci from scratch
 
-### To clone project:
-`git clone https://github.com/LavellTheDev/vinci.git`
-
-### To start project:
-cd into project folder.
-
-Run `npm start`  or `node ./bin/www` to start project server.
-
-Open `localhost:3000` in a browser window.
-
 ### Project Versions:
 To use the panel version of the project use the `new` branch. The margins need to be fixed due to the frameset issue. The framework we used for the panels version of the site is called Scroll Trigger. More information on how to use this framework can be found here: https://greensock.com/scrolltrigger/
 
 To use the version of the site without panels, use the `nopanel` branch. The margins are complete for mobile and laptop views, and mostly complete for larger desktop views.
 The contact form also needs to be connected to the mailer used in the project.
+
+### To clone project:
+`git clone https://github.com/LavellTheDev/vinci.git`
+
+### To start project:
+cd into project folder.
+Run `npm i` or `npm install` to install project dependencies.
+
+You will automatically start on the main branch of the project, but will need to select either the `new` branch which has the panels or the `nopanel` branch without the panels.
+
+Run `npm start`  or `node ./bin/www` to start project server.
+
+Open `localhost:3000` in a browser window.
+
 
 ### Tailwind CSS
 The CSS framework used is tailwind css which uses classes to add CSS properties to elements. You can find more info and default class names here: https://tailwindcss.com/
